@@ -1,0 +1,12 @@
+.under-construction__container {
+  background: #4f4f4f;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+.under-construction__image {
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+}
