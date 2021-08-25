@@ -86,6 +86,11 @@ header ul li:hover {
   color: white;
 }
 
+header ul li:active {
+  background: #4f4f4f;
+  color: white;
+}
+
 header nav .menu input[type="checkbox"]:checked ~ ul {
   height: 360px;
   -webkit-transition: height 0.5s ease-in-out;

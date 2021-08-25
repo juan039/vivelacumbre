@@ -51,6 +51,10 @@ header{
             background: $color-blue;
             color: white;
         }
+        li:active {
+            background: $color-gray;
+            color: white;
+        }
     }
     /*Animación para que el menu se despliegue*/
     nav .menu input[type="checkbox"]:checked~ul{
