@@ -137,7 +137,8 @@ header{
                         position: relative;
                         border-radius: 0;
                         margin-left: 15px;
-                        transition: background 0.5s;
+                        transition: background 0.2s;
+                        border-radius: 3px;
                         
                         a{
                             
@@ -149,7 +150,7 @@ header{
                     };
 
                     li:hover {
-                        border-radius: 3px
+                        background-color: $color-gray;
                     };
                 };
                 input[type="checkbox"]{
