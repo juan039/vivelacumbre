@@ -13,6 +13,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #ff7900;
+  z-index: 10;
   /*decoracion de la lista desordenada*/
   /*Animación para que el menu se despliegue*/
 }
