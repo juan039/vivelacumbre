@@ -204,8 +204,8 @@ header .menu input:checked ~ span:nth-last-child(2) {
   header nav .menu ul li:hover {
     background-color: #4f4f4f;
   }
-  header nav .menu input[type="checkbox"] {
-    display: none;
+  header nav .menu input[type="checkbox"]:checked ~ ul {
+    height: auto;
   }
 }
 /*# sourceMappingURL=navBar.css.map */
