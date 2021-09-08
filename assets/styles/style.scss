@@ -1,11 +1,10 @@
-$color-blue: #05aacf;
-$color-orange: #ff7900;
-$color-gray: #4f4f4f;
+@import './base/reset';
+@import './base/typography';
+@import './abstracts/variables';
 
 body {
-  margin: 0;
-  }
-
+  font-family: "Fleepavlop-thin", "DINPro", sans-serif;
+}
 
 .under-construction {
   &__container {

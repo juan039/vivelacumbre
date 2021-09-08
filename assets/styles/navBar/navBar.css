@@ -1,36 +1,4 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-}
-
-.under-construction__container {
-  background: #4f4f4f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100vw;
-}
-
-.under-construction__image {
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
-}
-
-/*normalizadores*/
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /*estructura del encabezado*/
 header {
   position: fixed;

@@ -1,14 +1,5 @@
-@import '../style.scss';
+@import '../abstracts/variables';
 
-/*normalizadores*/
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-};
 /*estructura del encabezado*/
 header{
     position: fixed;
