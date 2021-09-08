@@ -1,0 +1,91 @@
+footer {
+  padding: 0 10px;
+  font-size: 10px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ff7900;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .politicas {
+  width: 31%;
+  text-decoration: none;
+  color: black;
+}
+
+footer .politicas:hover {
+  color: #4f4f4f;
+}
+
+footer .citacion {
+  width: 39%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+footer .citacion a {
+  color: black;
+  text-decoration: none;
+}
+
+footer .citacion a:hover {
+  color: #4f4f4f;
+}
+
+footer .contenedor-redes {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .contenedor-redes img {
+  height: 20px;
+  width: auto;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: height 0.2s;
+  transition: height 0.2s;
+}
+
+footer .contenedor-redes img:hover {
+  height: 25px;
+}
+
+@media screen and (min-width: 568px) {
+  footer {
+    padding: 0;
+    font-size: 17px;
+  }
+  footer .contenedor-redes img {
+    height: 35px;
+    margin: 0 20px;
+    border-radius: 9px;
+  }
+  footer .contenedor-redes img:hover {
+    height: 40px;
+  }
+  footer .citacion {
+    display: block;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

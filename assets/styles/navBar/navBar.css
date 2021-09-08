@@ -80,7 +80,7 @@ header .menu {
 
 header .menu input {
   display: block;
-  width: 40px;
+  width: 30px;
   height: 32px;
   opacity: 0;
   z-index: 2;
