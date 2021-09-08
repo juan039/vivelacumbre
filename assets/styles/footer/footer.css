@@ -15,7 +15,9 @@ footer {
 }
 
 footer .politicas {
-  width: 31%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
   text-decoration: none;
   color: black;
 }
@@ -25,7 +27,9 @@ footer .politicas:hover {
 }
 
 footer .citacion {
-  width: 39%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +49,9 @@ footer .citacion a:hover {
 }
 
 footer .contenedor-redes {
-  width: 30%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

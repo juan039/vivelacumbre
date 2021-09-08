@@ -1,91 +1,88 @@
 @import '../abstracts/variables';
 
 
-footer{
-    padding: 0 10px;
-    font-size: 10px;
-    height: 60px;
+footer {
+  padding: 0 10px;
+  font-size: 10px;
+  height: 60px;
+  display: flex;
+  background-color: $color-orange;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+
+  .politicas{
+    flex-basis: 33%;
+    text-align: center;
+    
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+      color: $color-gray;
+    }
+  }
+
+  .citacion{
+    flex-basis: 33%;
+    text-align: center;
     display: flex;
-    background-color: $color-orange;
-    width: 100%;
-    justify-content: space-around;
+    flex-flow: column;
+    
+    a{
+      color: black;
+      text-decoration: none;
+      
+      &:hover{
+        color: $color-gray;
+      }
+    }
+  }
+
+  .contenedor-redes{
+    flex-basis: 33%;
+    text-align: center;
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    
 
+    img{
+      height: 20px;
+      width: auto;
+      margin: 0 5px;
+      background-color: white;
+      border-radius: 5px;
+      transition:  height 0.2s;
 
-    .politicas{
-        width: 31%;
-        
-        text-decoration: none;
-        color: black;
-
-        &:hover{
-            color: $color-gray;
-        }
+      &:hover{
+        height: 25px;
+      }
     }
-
-    .citacion{
-        width: 39%;
-        display: flex;
-        flex-flow: column;
-        
-        a{
-            color: black;
-            text-decoration: none;
-            
-            &:hover{
-                color: $color-gray;
-            }
-        }
-    }
-
-    .contenedor-redes{
-        width: 30%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        
-
-        img{
-            height: 20px;
-            width: auto;
-            margin: 0 5px;
-            background-color: white;
-            border-radius: 5px;
-            transition:  height 0.2s;
-
-            &:hover{
-                height: 25px;
-            }
-        }
-    }
-
-
+  }
 }
 
 
 @media screen and (min-width: 568px){
-    footer{
-        padding: 0;
-        font-size: 17px;
-        .contenedor-redes{
-            img{
-                height: 35px;
-                margin: 0 20px;
-                border-radius: 9px;
+  footer{
+    padding: 0;
+    font-size: 17px;
+    .contenedor-redes{
+      img{
+        height: 35px;
+        margin: 0 20px;
+        border-radius: 9px;   
 
-                
-
-                &:hover{
-                    height: 40px;
-                }
-
-            }
+        &:hover{
+          height: 40px;
         }
 
-        .citacion{
-            display:block;
-            
-        }
+      }
     }
 
+    .citacion{
+      display:block;
+    }
+  }
 }
