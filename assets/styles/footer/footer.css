@@ -1,4 +1,4 @@
-footer {
+.footer {
   padding: 0 10px;
   font-size: 10px;
   height: 60px;
@@ -14,19 +14,17 @@ footer {
           align-items: center;
 }
 
-footer .politicas {
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+.footer .politicas {
   text-align: center;
   text-decoration: none;
   color: black;
 }
 
-footer .politicas:hover {
+.footer .politicas:hover {
   color: #4f4f4f;
 }
 
-footer .citacion {
+.footer .citacion {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
   text-align: center;
@@ -39,16 +37,16 @@ footer .citacion {
           flex-flow: column;
 }
 
-footer .citacion a {
+.footer .citacion a {
   color: black;
   text-decoration: none;
 }
 
-footer .citacion a:hover {
+.footer .citacion a:hover {
   color: #4f4f4f;
 }
 
-footer .contenedor-redes {
+.footer .contenedor-redes {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
   text-align: center;
@@ -63,7 +61,7 @@ footer .contenedor-redes {
           justify-content: space-evenly;
 }
 
-footer .contenedor-redes img {
+.footer .contenedor-redes img {
   height: 20px;
   width: auto;
   margin: 0 5px;
@@ -73,24 +71,35 @@ footer .contenedor-redes img {
   transition: height 0.2s;
 }
 
-footer .contenedor-redes img:hover {
+.footer .contenedor-redes img:hover {
   height: 25px;
 }
 
+.footer__links {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media screen and (min-width: 568px) {
-  footer {
+  .footer {
     padding: 0;
-    font-size: 17px;
   }
-  footer .contenedor-redes img {
+  .footer .contenedor-redes img {
     height: 35px;
     margin: 0 20px;
     border-radius: 9px;
   }
-  footer .contenedor-redes img:hover {
+  .footer .contenedor-redes img:hover {
     height: 40px;
   }
-  footer .citacion {
+  .footer .citacion {
     display: block;
   }
 }

@@ -40,6 +40,7 @@ header ul li {
 }
 
 header ul li a {
+  font-family: "Fleepavlop-thin", "DINPro", sans-serif;
   display: block;
   position: relative;
   text-decoration: none;
