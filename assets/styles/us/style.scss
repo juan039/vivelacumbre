@@ -1,0 +1,50 @@
+@import '../abstracts/variables';
+
+.us {
+  padding: 0 24px;
+
+  &__title {
+    text-align: center;
+    margin: 32px 0 24px;
+  }
+
+  &__mission,
+  &__vision,
+  &__methodology {
+    margin: 24px 0;
+
+    &__title {
+      margin: 16px 16px;
+    }
+
+    &__description {
+      strong {
+        color: $color-orange;
+      }
+    }
+  }
+
+  &__methodology {
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 600px){
+  .us {
+    padding: 0 32px;
+    max-width: 1080px;
+    margin: auto;
+
+    &__vision {
+      text-align: end;
+    }
+    &__methodology {
+      text-align: center;
+      &__image {
+       max-width: 1080px; 
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.us {
+  padding: 0 24px;
+}
+
+.us__title {
+  text-align: center;
+  margin: 32px 0 24px;
+}
+
+.us__mission, .us__vision, .us__methodology {
+  margin: 24px 0;
+}
+
+.us__mission__title, .us__vision__title, .us__methodology__title {
+  margin: 16px 16px;
+}
+
+.us__mission__description strong, .us__vision__description strong, .us__methodology__description strong {
+  color: #ff7900;
+}
+
+.us__methodology__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .us {
+    padding: 0 32px;
+    max-width: 1080px;
+    margin: auto;
+  }
+  .us__vision {
+    text-align: end;
+  }
+  .us__methodology {
+    text-align: center;
+  }
+  .us__methodology__image {
+    max-width: 1080px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

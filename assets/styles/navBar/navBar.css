@@ -132,7 +132,7 @@ header .menu input:checked ~ span:nth-last-child(2) {
           transform: rotate(-45deg) translate(1px, 0px);
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 600px) {
   header .logo {
     z-index: 1;
   }

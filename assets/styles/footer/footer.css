@@ -87,19 +87,19 @@
           flex-direction: column;
 }
 
-@media screen and (min-width: 568px) {
-  .footer {
+@media screen and (min-width: 600px) {
+  footer {
     padding: 0;
   }
-  .footer .contenedor-redes img {
+  footer .contenedor-redes img {
     height: 35px;
     margin: 0 20px;
     border-radius: 9px;
   }
-  .footer .contenedor-redes img:hover {
+  footer .contenedor-redes img:hover {
     height: 40px;
   }
-  .footer .citacion {
+  footer .citacion {
     display: block;
   }
 }
