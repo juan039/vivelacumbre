@@ -29,6 +29,11 @@
       width: 100%;
     }
   }
+  
+  &.section-linked {
+    padding-top: 45px;
+    margin-top: -45px;
+  }
 }
 
 @media screen and (min-width: 600px){

@@ -23,6 +23,11 @@
   width: 100%;
 }
 
+.us.section-linked {
+  padding-top: 45px;
+  margin-top: -45px;
+}
+
 @media screen and (min-width: 600px) {
   .us {
     padding: 0 32px;
