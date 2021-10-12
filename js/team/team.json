@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Cristina",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "Gestora de travesía (Con caña y Café)",
+    "linkedin": "https://www.linkedin.com/in/cristinavaldiviesod/"
+  },
+  {
+    "name": "Ana",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "Gestora de travesía (Del Urabá)",
+    "linkedin": ""
+  },
+  {
+    "name": "Laura",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "Sostenibilidad",
+    "linkedin": "https://www.linkedin.com/in/laura-echeverri-mallarino-835583196/"
+  },
+  {
+    "name": "Daniela",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "",
+    "linkedin": ""
+  },
+  {
+    "name": "Natalia A.",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "Formación",
+    "linkedin": "https://www.linkedin.com/in/natalia-acu%C3%B1a-pradilla-073b7472/"
+  },
+  {
+    "name": "Natalia R.",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "Formación",
+    "linkedin": "https://www.linkedin.com/in/natalia-ramos-34672b42/"
+  },
+  {
+    "name": "Bárbara",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "Seguridad",
+    "linkedin": ""
+  },
+  {
+    "name": "Daniel",
+    "photo_url": "https://joeschmoe.io/api/v1/male/",
+    "nickname": "",
+    "role": "Monitoreo y Evaluación",
+    "linkedin": "https://www.linkedin.com/in/daniel-castillo-gomez/"
+  },
+  {
+    "name": "Eugenia",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "Bienestar",
+    "linkedin": "https://www.linkedin.com/in/eugenia-echeverri-aranzazu-801295b6/"
+  },
+  {
+    "name": "Vanessa",
+    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "nickname": "",
+    "role": "Comunicaciones",
+    "linkedin": ""
+  }
+]

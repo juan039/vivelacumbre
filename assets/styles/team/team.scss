@@ -1,0 +1,69 @@
+@import '../abstracts/variables';
+
+.team {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  &__title {
+    margin: 32px 0 24px;
+    text-align: center;
+  }
+
+  .member {
+    &__card {
+      align-items: center;
+      border-radius: 10px;
+      border: 1px solid $color-blue;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      color: $color-gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px;
+      text-decoration: none;
+      width: 250px;
+
+      &__image {
+        border-radius: 50%;
+        height: 150px;
+        object-fit: cover;
+        width: 150px;
+      }
+
+      &__name {
+        color: #016d85;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      &__nickname {
+        color: rgb(148, 148, 148);
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      &__role {
+        color: $color-black;
+        font-size: 14px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 600px){
+  .team {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .team {
+    max-width: 1080px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
