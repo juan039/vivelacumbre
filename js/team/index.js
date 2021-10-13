@@ -1,5 +1,5 @@
 async function asyncCall() {
-  const team_members = await (await fetch('/js/team/team.json')).json();
+  const team_members = await (await fetch('./js/team/team.json')).json();
   // expected output: "resolved"
   printMembersDOM(team_members)
 }
