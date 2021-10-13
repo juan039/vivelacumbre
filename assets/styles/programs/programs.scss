@@ -1,0 +1,60 @@
+@import '../abstracts/variables';
+
+.programs{
+  padding: 0 24px;
+  text-align: center;
+    
+  &__title {
+    margin: 32px 0 24px;
+  }
+
+  &__description,
+  &__travel {
+    margin: 24px 0;
+  }
+
+  &__fotodesc{
+    padding: 0px;
+  }
+
+  
+
+  &.section-linked {
+      padding-top: 45px;
+      margin-top: -45px;
+  }
+
+  &__enseña {
+      text-decoration: none;
+      color: $color-orange;
+      
+      &:hover{
+          color: $color-blue;
+      }
+  }
+
+}
+
+@media screen and (min-width: 600px){
+  .programs {
+    padding: 0 32px;
+    max-width: 1080px;
+    margin: auto;
+
+    &__flex{
+      display: flex; 
+    }
+
+    &__fotodesc{
+      padding: 0 105px;
+    }
+
+    &__travel {
+      text-align: center;
+      &__image {
+        max-width: 1080px; 
+      }
+    }
+  }
+}
+  

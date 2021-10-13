@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.programs {
+  padding: 0 24px;
+  text-align: center;
+}
+
+.programs__title {
+  margin: 32px 0 24px;
+}
+
+.programs__description, .programs__travel {
+  margin: 24px 0;
+}
+
+.programs__fotodesc {
+  padding: 0px;
+}
+
+.programs.section-linked {
+  padding-top: 45px;
+  margin-top: -45px;
+}
+
+.programs__enseña {
+  text-decoration: none;
+  color: #ff7900;
+}
+
+.programs__enseña:hover {
+  color: #05aacf;
+}
+
+@media screen and (min-width: 600px) {
+  .programs {
+    padding: 0 32px;
+    max-width: 1080px;
+    margin: auto;
+  }
+  .programs__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .programs__fotodesc {
+    padding: 0 105px;
+  }
+  .programs__travel {
+    text-align: center;
+  }
+  .programs__travel__image {
+    max-width: 1080px;
+  }
+}
+/*# sourceMappingURL=programs.css.map */
