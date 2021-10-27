@@ -13,7 +13,7 @@ function printMembersDOM (members) {
     a.classList.add('member__card');
     a.href = member.linkedin;
     a.target = "_blank";
-    a.innerHTML = `<img src="${member.photo_url}${member.name}" alt="" class="member__card__image">
+    a.innerHTML = `<img src="${member.photo_url}" alt="" class="member__card__image">
       <h3 class="member__card__name">${member.name}</h3>
       <h4 class="member__card__nickname">${member.nickname}</h4>
       <p class="member__card__role">${member.role}</p>`
