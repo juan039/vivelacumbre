@@ -7,20 +7,38 @@
   margin: 32px 0 24px;
 }
 
-.us__mission, .us__vision, .us__methodology {
+.us__mission, .us__vision, .us__methodology, .us__ods {
   margin: 24px 0;
 }
 
-.us__mission__title, .us__vision__title, .us__methodology__title {
+.us__mission__title, .us__vision__title, .us__methodology__title, .us__ods__title {
   margin: 16px 16px;
 }
 
-.us__mission__description strong, .us__vision__description strong, .us__methodology__description strong {
+.us__mission__description strong, .us__vision__description strong, .us__methodology__description strong, .us__ods__description strong {
   color: #ff7900;
 }
 
 .us__methodology__image {
   width: 100%;
+}
+
+.us__ods__goal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.us__ods__goal img {
+  width: 150px;
+  margin-right: 1.5rem;
+}
+
+.us__ods__goal + .us__ods__goal {
+  margin-top: 2rem;
 }
 
 .us.section-linked {
@@ -42,6 +60,19 @@
   }
   .us__methodology__image {
     max-width: 1080px;
+  }
+  .us__ods__goal img {
+    width: 200px;
+  }
+  .us__ods__goal--reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .us__ods__goal--reverse img {
+    margin-right: 0;
+    margin-left: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

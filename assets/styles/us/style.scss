@@ -10,7 +10,8 @@
 
   &__mission,
   &__vision,
-  &__methodology {
+  &__methodology,
+  &__ods {
     margin: 24px 0;
 
     &__title {
@@ -30,6 +31,22 @@
     }
   }
   
+  &__ods {
+    &__goal {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 150px;
+        margin-right: 1.5rem;
+      }
+
+      & + & {
+        margin-top: 2rem;
+      }
+    }
+  }
+
   &.section-linked {
     padding-top: 45px;
     margin-top: -45px;
@@ -45,10 +62,28 @@
     &__vision {
       text-align: end;
     }
+
     &__methodology {
       text-align: center;
       &__image {
        max-width: 1080px; 
+      }
+    }
+
+    &__ods {
+      &__goal {
+        img {
+          width: 200px;
+        }
+
+        &--reverse {
+          flex-direction: row-reverse;
+    
+          img {
+            margin-right: 0;
+            margin-left: 1.5rem;
+          }
+        }
       }
     }
   }
