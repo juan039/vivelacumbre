@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./assets/styles/team/team.css">
   <link rel="stylesheet" href="./assets/styles/programs/programs.css">
   <link rel="stylesheet" href="./assets/styles/footer/footer.css">
+  <link rel="stylesheet" href="./assets/styles/programs/ProgramsSlider/programsSlider.css">
 </head>
 <body>
   <header>
@@ -135,17 +136,149 @@
       Trabajamos con dos comunidades en alianza con <a href="https://ensenaporcolombia.org/" class="programs__enseña">Enseña por Colombia</a>.
     </p>
     <div class="programs__flex">
-      <article class="programs__travel">
-        <h3>Urabá</h3>
-        <img src="./assets/img/uraba.png" alt="Urabá" class="programs__travel__image">
-        <p>Desde 2016</p>
-      </article>
-      <article class="programs__travel">
-        <h3>Caña y café</h3>
-        <img src="./assets/img/valle del cauca.png" alt="Risaralda y Valle del cauca" class="programs__travel__image">
-        <p>Desde 2021</p>   
-        <p class="programs__fotodesc">Este año realizaremos la primera travesía con jóvenes del Valle del Cauca y Risaralda</p>
-      </article>
+      <a href="#" class="programs__travel cta-u">
+        <article >
+          <h3>Urabá</h3>
+          <img src="./assets/img/uraba.png" alt="Urabá" class="programs__travel__image">
+          <p>Desde 2016</p>
+        </article>
+      </a>
+      <a href="#" class="programs__travel cta-v">
+        <article>
+          <h3>Caña y café</h3>
+          <img src="./assets/img/valle del cauca.png" alt="Risaralda y Valle del cauca" class="programs__travel__image">
+          <p>Desde 2021</p>   
+          <p class="programs__fotodesc">Este año realizaremos la primera travesía con jóvenes del Valle del Cauca y Risaralda</p>
+        </article>
+      </a>
+
+    </div>
+    <!-- Uraba Modal -->
+    <div class="modal-containerU">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <div class="modal-textos">
+          <!-- Slideshow container -->
+          <div class="slideshowPrograms programsSlider__container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">1 / 6</div>
+              <iframe  class="programsSlider__image" width="950" height="534" src="https://www.youtube.com/embed/YVGnugG2yOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="programsSlider__text">Caption Text</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">2 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_2.jpg">
+              <div class="programsSlider__text">Caption Two</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">3 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_3.jpg">
+              <div class="programsSlider__text">Caption Three</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">4 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_4.jpg">
+              <div class="programsSlider__text">Caption Three</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">5 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_5.jpg">
+              <div class="programsSlider__text">Caption Three</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">6 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_6.jpg">
+              <div class="programsSlider__text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="progPrev" onclick="plusSlidesU(-1)">&#10094;</a>
+            <a class="progNext" onclick="plusSlidesU(1)">&#10095;</a>
+            <!-- The dots/circles -->
+            <div class="programsSlider__buttons" style="text-align:center">
+              <span class="progDotU" onclick="currentSlideU(1)"></span>
+              <span class="progDotU" onclick="currentSlideU(2)"></span>
+              <span class="progDotU" onclick="currentSlideU(3)"></span>
+              <span class="progDotU" onclick="currentSlideU(4)"></span>
+              <span class="progDotU" onclick="currentSlideU(5)"></span>
+              <span class="progDotU" onclick="currentSlideU(6)"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- Valle Modal -->
+    <div class="modal-containerV">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <div class="modal-textos">
+          <!-- Slideshow container -->
+          <div class="slideshowPrograms programsSlider__container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">1 / 6</div>
+              <p>Caña y cafe</p>
+              <div class="programsSlider__text">Caption Text</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">2 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_2.jpg">
+              <div class="programsSlider__text">Caption Two</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">3 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_3.jpg">
+              <div class="programsSlider__text">Caption Three</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">4 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_4.jpg">
+              <div class="programsSlider__text">Caption Three</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">5 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_5.jpg">
+              <div class="programsSlider__text">Caption Three</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">6 / 6</div>
+              <img class="programsSlider__image" src="./assets/img/slider/slider_6.jpg">
+              <div class="programsSlider__text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="progPrev" onclick="plusSlidesV(-1)">&#10094;</a>
+            <a class="progNext" onclick="plusSlidesV(1)">&#10095;</a>
+            <!-- The dots/circles -->
+            <div class="programsSlider__buttons" style="text-align:center">
+              <span class="progDotV" onclick="currentSlideV(1)"></span>
+              <span class="progDotV" onclick="currentSlideV(2)"></span>
+              <span class="progDotV" onclick="currentSlideV(3)"></span>
+              <span class="progDotV" onclick="currentSlideV(4)"></span>
+              <span class="progDotV" onclick="currentSlideV(5)"></span>
+              <span class="progDotV" onclick="currentSlideV(6)"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -185,6 +318,9 @@
     </div>
   </footer>
   <script src="./js/slider.js"></script>
+  <script src="./js/programs/sliderUraba.js"></script>
+  <script src="./js/programs/sliderValle.js"></script>
   <script src="./js/team/index.js"></script>
+  <script src="./js/programs/modal.js"></script>
 </body>
 </html>
