@@ -73,7 +73,7 @@
   }
 
   &__fotodesc{
-    padding: 0px;
+    padding: 0px 32px;
   }
 
   
@@ -106,7 +106,7 @@
     }
 
     &__fotodesc{
-      padding: 0 32px;
+      padding: 0;
     }
 
     &__travel {
@@ -116,6 +116,7 @@
       &__image {
         max-width: 1080px;
         width: 100%; 
+        height: 45vh;
       }
     }
   }
