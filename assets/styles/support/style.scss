@@ -1,0 +1,78 @@
+@import "../abstracts/variables";
+
+.support {
+  text-align: center;
+  .text-description {
+    padding: 3vh 0 5vh;
+  }
+  .special-text {
+    font-weight: bold;
+  }
+
+  .container {
+    &__father {
+      display: flex;
+      padding: 35px 15px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__description {
+      width: 50vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .img {
+        &__principal {
+          width: 70vw;
+          height: auto;
+          padding: 0;
+        }
+      }
+    }
+
+    &__payment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50vw;
+      .img {
+        &__qr {
+          padding: 10px 0;
+          height: auto;
+          width: 40vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .support {
+    .text-description {
+      padding: 5px 11vw;
+    }
+    .container {
+      &__father {
+        flex-direction: row;
+      }
+      &__description {
+        .img {
+          &__principal {
+            width: 30vw;
+          }
+        }
+      }
+
+      &__payment {
+        .img {
+          &__qr {
+            width: 12vw;
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
