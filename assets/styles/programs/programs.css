@@ -4,7 +4,8 @@
   text-align: center;
 }
 
-.programs .modal-containerU, .programs .modal-containerV {
+.programs .modal-containerU,
+.programs .modal-containerV {
   opacity: 0;
   visibility: hidden;
   position: fixed;

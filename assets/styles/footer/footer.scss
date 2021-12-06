@@ -1,5 +1,4 @@
-@import '../abstracts/variables';
-
+@import "../abstracts/variables";
 
 .footer {
   padding: 10px;
@@ -11,51 +10,49 @@
   justify-content: space-around;
   align-items: center;
 
-
-  .politicas{
+  .politicas {
     text-align: center;
-    
+
     text-decoration: none;
     color: black;
 
-    &:hover{
+    &:hover {
       color: $color-gray;
     }
   }
 
-  .citacion{
+  .citacion {
     flex-basis: 33%;
     text-align: center;
     display: flex;
     flex-flow: column;
-    
-    a{
+
+    a {
       color: black;
       text-decoration: none;
-      
-      &:hover{
+
+      &:hover {
         color: $color-gray;
       }
     }
   }
 
-  .contenedor-redes{
+  .contenedor-redes {
     flex-basis: 33%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
 
-    img{
+    img {
       height: 20px;
       width: auto;
       margin: 0 5px;
       background-color: white;
       border-radius: 5px;
-      transition:  height 0.2s;
+      transition: height 0.2s;
 
-      &:hover{
+      &:hover {
         height: 25px;
       }
     }
@@ -77,25 +74,23 @@
   }
 }
 
-
-@media screen and (min-width: 600px){
-  footer{
+@media screen and (min-width: 600px) {
+  footer {
     padding: 0;
-    .contenedor-redes{
-      img{
+    .contenedor-redes {
+      img {
         height: 35px;
         margin: 0 20px;
-        border-radius: 9px;   
+        border-radius: 9px;
 
-        &:hover{
+        &:hover {
           height: 40px;
         }
-
       }
     }
 
-    .citacion{
-      display:block;
+    .citacion {
+      display: block;
     }
   }
 }

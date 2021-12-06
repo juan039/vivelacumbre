@@ -1,368 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vive La Cumbre</title>
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <link rel="stylesheet" href="./assets/styles/navBar/navBar.css">
-  <link rel="stylesheet" href="./assets/styles/components/slider/style.css">
-  <link rel="stylesheet" href="./assets/styles/us/style.css">
-  <link rel="stylesheet" href="./assets/styles/team/team.css">
-  <link rel="stylesheet" href="./assets/styles/programs/programs.css">
-  <link rel="stylesheet" href="./assets/styles/footer/footer.css">
-  <link rel="stylesheet" href="./assets/styles/programs/ProgramsSlider/programsSlider.css">
-</head>
-<body>
-  <header>
-    <img src="./assets/img/Logo_blanco.png" alt="" class="logo"/>
-    <nav>
-      <div class="menu">
-        <input type="checkbox" id="checkbox">
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#us">Somos</a></li>
-          <li><a href="#programs">Programas</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Apoya</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vive La Cumbre</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/navBar/navBar.css" />
+    <link rel="stylesheet" href="./assets/styles/components/slider/style.css" />
+    <link rel="stylesheet" href="./assets/styles/us/style.css" />
+    <link rel="stylesheet" href="./assets/styles/team/team.css" />
+    <link rel="stylesheet" href="./assets/styles/programs/programs.css" />
+    <link rel="stylesheet" href="./assets/styles/footer/footer.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/styles/programs/ProgramsSlider/programsSlider.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/Logo_blanco.png" alt="" class="logo" />
+      <nav>
+        <div class="menu">
+          <input type="checkbox" id="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#us">Somos</a></li>
+            <li><a href="#programs">Programas</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Apoya</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Slideshow container -->
+      <div class="slideshow-container slider__container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade slider__item">
+          <div class="numbertext">1 / 6</div>
+          <img class="slider__image" src="./assets/img/slider/slider_1.jpg" />
+          <div class="slider__text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade slider__item">
+          <div class="numbertext">2 / 6</div>
+          <img class="slider__image" src="./assets/img/slider/slider_2.jpg" />
+          <div class="slider__text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade slider__item">
+          <div class="numbertext">3 / 6</div>
+          <img class="slider__image" src="./assets/img/slider/slider_3.jpg" />
+          <div class="slider__text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade slider__item">
+          <div class="numbertext">4 / 6</div>
+          <img class="slider__image" src="./assets/img/slider/slider_4.jpg" />
+          <div class="slider__text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade slider__item">
+          <div class="numbertext">5 / 6</div>
+          <img class="slider__image" src="./assets/img/slider/slider_5.jpg" />
+          <div class="slider__text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade slider__item">
+          <div class="numbertext">6 / 6</div>
+          <img class="slider__image" src="./assets/img/slider/slider_6.jpg" />
+          <div class="slider__text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div class="slider__buttons" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
       </div>
-    </nav>
-  </header>
+    </main>
 
-  <main>
-    <!-- Slideshow container -->
-    <div class="slideshow-container slider__container">
+    <section id="us" class="section-linked us">
+      <h2 class="us__title">Somos</h2>
+      <article class="us__mission">
+        <h3 class="us__mission__title">Misión</h3>
+        <p class="us__mission__description">
+          Fortalecer las <strong>habilidades para la vida</strong> y la
+          conciencia ambiental de jóvenes con potencial de liderazgo colectivo
+          en contextos afectados por el conflicto armado colombiano, a través de
+          <strong>experiencias retadoras</strong> enmarcadas en la educación de
+          aventura
+        </p>
+      </article>
+      <article class="us__vision">
+        <h3 class="us__vision__title">Visión</h3>
+        <p class="us__vision__description">[PENDIENTE]</p>
+      </article>
+      <article class="us__methodology">
+        <h3 class="us__methodology__title">Metodología</h3>
+        <img
+          src="./assets/img/Metodologia.png"
+          alt="Imagen que muestra la metodología usada en vive la cumbre"
+          class="us__methodology__image"
+        />
+      </article>
+      <article class="us__ods">
+        <h3 class="us__ods__title">Objetivos de Desarrollo Sostenible</h3>
+        <div class="us__ods__goal">
+          <img src="./assets/img/ods/goal_4.jpeg" alt="" />
+          <p class="us__ods__description">
+            Trabajamos en el marco de la educación informal de calidad para
+            asegurar que los jóvenes adquieran los conocimientos teóricos y
+            prácticos necesarios para promover el desarrollo sostenible, entre
+            otras cosas mediante la educación para el desarrollo sostenible, los
+            estilos de vida sostenibles y la valoración de la diversidad.
+          </p>
+        </div>
+        <div class="us__ods__goal us__ods__goal--reverse">
+          <img src="./assets/img/ods/goal_13.jpeg" alt="" />
+          <p class="us__ods__description">
+            Emprendemos acciones por el clima, buscando mejorar la educación, la
+            sensibilización y la capacidad humana e institucional respecto de la
+            mitigación del cambio climático, la adaptación a él, la reducción de
+            sus efectos y la alerta temprana.
+          </p>
+        </div>
+      </article>
+    </section>
 
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade slider__item">
-        <div class="numbertext">1 / 6</div>
-        <img class="slider__image" src="./assets/img/slider/slider_1.jpg">
-        <div class="slider__text">Caption Text</div>
-      </div>
+    <section id="team" class="">
+      <h2 class="team__title">Equipo</h2>
 
-      <div class="mySlides fade slider__item">
-        <div class="numbertext">2 / 6</div>
-        <img class="slider__image" src="./assets/img/slider/slider_2.jpg">
-        <div class="slider__text">Caption Two</div>
-      </div>
+      <div class="team"></div>
+    </section>
 
-      <div class="mySlides fade slider__item">
-        <div class="numbertext">3 / 6</div>
-        <img class="slider__image" src="./assets/img/slider/slider_3.jpg">
-        <div class="slider__text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade slider__item">
-        <div class="numbertext">4 / 6</div>
-        <img class="slider__image" src="./assets/img/slider/slider_4.jpg">
-        <div class="slider__text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade slider__item">
-        <div class="numbertext">5 / 6</div>
-        <img class="slider__image" src="./assets/img/slider/slider_5.jpg">
-        <div class="slider__text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade slider__item">
-        <div class="numbertext">6 / 6</div>
-        <img class="slider__image" src="./assets/img/slider/slider_6.jpg">
-        <div class="slider__text">Caption Three</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      <!-- The dots/circles -->
-      <div class="slider__buttons" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-      </div>
-    </div>
-  </main>
-
-  <section id="us" class="section-linked us">
-    <h2 class="us__title">Somos</h2>
-    <article class="us__mission">
-      <h3 class="us__mission__title">Misión</h3>
-      <p class="us__mission__description">
-        Fortalecer las <strong>habilidades para la vida</strong> y la conciencia ambiental de jóvenes con potencial de liderazgo colectivo en contextos afectados por el conflicto armado colombiano, a través de <strong>experiencias retadoras</strong> enmarcadas en la educación de aventura
+    <section id="programs" class="section-linked programs">
+      <h2 class="programs__title">Programas</h2>
+      <p class="programs__description">
+        Desarrollamos travesías educativas para llevar a jóvenes con potencial
+        de liderazgo por una experiencia transformadora en Manizales y el Nevado
+        de Santa Isabel. Trabajamos con dos comunidades en alianza con
+        <a href="https://ensenaporcolombia.org/" class="programs__enseña"
+          >Enseña por Colombia</a
+        >.
       </p>
-    </article>
-    <article class="us__vision">
-      <h3 class="us__vision__title">Visión</h3>
-      <p class="us__vision__description">
-        [PENDIENTE]
-      </p>
-    </article>
-    <article class="us__methodology">
-      <h3 class="us__methodology__title">Metodología</h3>
-      <img src="./assets/img/Metodologia.png" alt="Imagen que muestra la metodología usada en vive la cumbre" class="us__methodology__image">
-    </article>
-    <article class="us__ods">
-      <h3 class="us__ods__title">Objetivos de Desarrollo Sostenible</h3>
-      <div class="us__ods__goal">
-        <img src="./assets/img/ods/goal_4.jpeg" alt="">
-        <p class="us__ods__description">Trabajamos en el marco de la educación informal de calidad para asegurar que los jóvenes adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible, entre otras cosas mediante la educación para el desarrollo sostenible, los estilos de vida sostenibles y la valoración de la diversidad.</p>
+      <div class="programs__flex">
+        <a href="#" class="programs__travel cta-u">
+          <article>
+            <h3>Urabá</h3>
+            <img
+              src="./assets/img/uraba.png"
+              alt="Urabá"
+              class="programs__travel__image"
+            />
+            <p>Desde 2016</p>
+          </article>
+        </a>
+        <a href="#" class="programs__travel cta-v">
+          <article>
+            <h3>Caña y café</h3>
+            <img
+              src="./assets/img/valle del cauca.png"
+              alt="Risaralda y Valle del cauca"
+              class="programs__travel__image"
+            />
+            <p>Desde 2021</p>
+            <p class="programs__fotodesc">
+              Este año realizaremos la primera travesía con jóvenes del Valle
+              del Cauca y Risaralda
+            </p>
+          </article>
+        </a>
       </div>
-      <div class="us__ods__goal us__ods__goal--reverse">
-        <img src="./assets/img/ods/goal_13.jpeg" alt="">
-        <p class="us__ods__description">Emprendemos acciones por el clima, buscando mejorar la educación, la sensibilización y la capacidad humana e institucional respecto de la mitigación del cambio climático, la adaptación a él, la reducción de sus efectos y la alerta temprana.</p>
-      </div>
-    </article>
-  </section>
-  
-  <section id="team" class="">
-    <h2 class="team__title">Equipo</h2>
+      <!-- Uraba Modal -->
+      <div class="modal-containerU">
+        <div class="modal modal-close">
+          <p class="close">X</p>
+          <div class="modal-textos">
+            <!-- Slideshow container -->
+            <div class="slideshowPrograms programsSlider__container">
+              <!-- Full-width images with number and caption text -->
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">1 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/1-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Él es Jhon Carlos, joven indígena Embera y aventurero 2019
+                </div>
+              </div>
 
-    <div class="team">
-    </div>
-  </section>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">2 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/2-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Con 16 años soñaba con ser el líder de su comunidad
+                </div>
+              </div>
 
-  <section id="programs" class="section-linked programs">
-    <h2 class="programs__title">Programas</h2>
-    <p class="programs__description">Desarrollamos travesías educativas para llevar a jóvenes con potencial de liderazgo
-      por una experiencia transformadora en Manizales y el Nevado de Santa Isabel.
-      Trabajamos con dos comunidades en alianza con <a href="https://ensenaporcolombia.org/" class="programs__enseña">Enseña por Colombia</a>.
-    </p>
-    <div class="programs__flex">
-      <a href="#" class="programs__travel cta-u">
-        <article >
-          <h3>Urabá</h3>
-          <img src="./assets/img/uraba.png" alt="Urabá" class="programs__travel__image">
-          <p>Desde 2016</p>
-        </article>
-      </a>
-      <a href="#" class="programs__travel cta-v">
-        <article>
-          <h3>Caña y café</h3>
-          <img src="./assets/img/valle del cauca.png" alt="Risaralda y Valle del cauca" class="programs__travel__image">
-          <p>Desde 2021</p>   
-          <p class="programs__fotodesc">Este año realizaremos la primera travesía con jóvenes del Valle del Cauca y Risaralda</p>
-        </article>
-      </a>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">3 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/3-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Estando en 6to logró ser promovido a 7to para reducir su
+                  brecha de edad
+                </div>
+              </div>
 
-    </div>
-    <!-- Uraba Modal -->
-    <div class="modal-containerU">
-      <div class="modal modal-close">
-        <p class="close">X</p>
-        <div class="modal-textos">
-          <!-- Slideshow container -->
-          <div class="slideshowPrograms programsSlider__container">
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">4 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/4-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Los fines de semana, regresa a su comunidad para aportar en
+                  las labores de agricultura
+                </div>
+              </div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">1 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/1-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Él es Jhon Carlos, joven indígena Embera y aventurero 2019</div>
-            </div>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">5 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/5-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Junto a 27 aventureres más emprendió una travesía educativa
+                  para conocer donde nace la vida
+                </div>
+              </div>
 
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">2 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/2-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Con 16 años soñaba con ser el líder de su comunidad</div>
-            </div>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">6 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/6-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Personas diversas, a pesar de ser de la misma región, pero a
+                  quienes pudo compartirles algo de su cultura
+                </div>
+              </div>
 
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">3 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/3-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Estando en 6to logró ser promovido a 7to para reducir su brecha de edad</div>
-            </div>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">7 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/7-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Su fascinación tanto con Manizales y lo urbano, como con el
+                  Parque de Los Nevados, fue notoria en su experiencia
+                </div>
+              </div>
 
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">4 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/4-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Los fines de semana, regresa a su comunidad para aportar en las labores de agricultura</div>
-            </div>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">8 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/8-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Junto a su cordada lograron llegar a la meta, el borde del
+                  glaciar del Nevado Santa Isabel. Aquí apenas empezaba la
+                  cuesta.
+                </div>
+              </div>
 
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">5 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/5-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Junto a 27 aventureres más emprendió una travesía educativa para conocer donde nace la vida</div>
-            </div>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">9 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/9-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Al inicio, cerraba el grupo
+                </div>
+              </div>
 
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">6 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/6-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Personas diversas, a pesar de ser de la misma región, pero a quienes pudo compartirles algo de su cultura</div>
-            </div>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">10 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/10-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Pero su resistencia, por estar acostumbrado a caminar largas
+                  distancias, le permitió llegar pronto a la nieve
+                </div>
+              </div>
 
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">7 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/7-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Su fascinación tanto con Manizales y lo urbano, como con el Parque de Los Nevados, fue notoria en su experiencia</div>
-            </div>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">11 / 12</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/programs/uraba/11-Jhon-Carlos-min.jpg"
+                />
+                <div class="programsSlider__text">
+                  Las habilidades que más desarrolló fueron el autoconocimiento
+                  y trabajo en equipo
+                </div>
+              </div>
 
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">8 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/8-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Junto a su cordada lograron llegar a la meta, el borde del glaciar del Nevado Santa Isabel. Aquí apenas empezaba la cuesta.</div>
-            </div>
+              <div class="urabaSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">12 / 12</div>
+                <iframe
+                  class="programsSlider__image"
+                  width="950"
+                  height="534"
+                  src="https://www.youtube.com/embed/YVGnugG2yOo"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <div class="programsSlider__text">Conoce más</div>
+              </div>
 
-             <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">9 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/9-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Al inicio, cerraba el grupo</div>
-            </div>
-
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">10 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/10-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Pero su resistencia, por estar acostumbrado a caminar largas distancias, le permitió llegar pronto a la nieve</div>
-            </div>
-
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">11 / 12</div>
-              <img class="programsSlider__image" src="./assets/img/programs/uraba/11-Jhon-Carlos-min.jpg">
-              <div class="programsSlider__text">Las habilidades que más desarrolló fueron el autoconocimiento y trabajo en equipo</div>
-            </div>
-
-            <div class="urabaSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">12 / 12</div>
-              <iframe  class="programsSlider__image" width="950" height="534" src="https://www.youtube.com/embed/YVGnugG2yOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <div class="programsSlider__text">Conoce más</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="progPrev" onclick="plusSlidesU(-1)">&#10094;</a>
-            <a class="progNext" onclick="plusSlidesU(1)">&#10095;</a>
-            <!-- The dots/circles -->
-            <div class="programsSlider__buttons" style="text-align:center">
-              <span class="progDotU" onclick="currentSlideU(1)"></span>
-              <span class="progDotU" onclick="currentSlideU(2)"></span>
-              <span class="progDotU" onclick="currentSlideU(3)"></span>
-              <span class="progDotU" onclick="currentSlideU(4)"></span>
-              <span class="progDotU" onclick="currentSlideU(5)"></span>
-              <span class="progDotU" onclick="currentSlideU(6)"></span>
-              <span class="progDotU" onclick="currentSlideU(7)"></span>
-              <span class="progDotU" onclick="currentSlideU(8)"></span>
-              <span class="progDotU" onclick="currentSlideU(9)"></span>
-              <span class="progDotU" onclick="currentSlideU(10)"></span>
-              <span class="progDotU" onclick="currentSlideU(11)"></span>
-              <span class="progDotU" onclick="currentSlideU(12)"></span>
+              <!-- Next and previous buttons -->
+              <a class="progPrev" onclick="plusSlidesU(-1)">&#10094;</a>
+              <a class="progNext" onclick="plusSlidesU(1)">&#10095;</a>
+              <!-- The dots/circles -->
+              <div class="programsSlider__buttons" style="text-align: center">
+                <span class="progDotU" onclick="currentSlideU(1)"></span>
+                <span class="progDotU" onclick="currentSlideU(2)"></span>
+                <span class="progDotU" onclick="currentSlideU(3)"></span>
+                <span class="progDotU" onclick="currentSlideU(4)"></span>
+                <span class="progDotU" onclick="currentSlideU(5)"></span>
+                <span class="progDotU" onclick="currentSlideU(6)"></span>
+                <span class="progDotU" onclick="currentSlideU(7)"></span>
+                <span class="progDotU" onclick="currentSlideU(8)"></span>
+                <span class="progDotU" onclick="currentSlideU(9)"></span>
+                <span class="progDotU" onclick="currentSlideU(10)"></span>
+                <span class="progDotU" onclick="currentSlideU(11)"></span>
+                <span class="progDotU" onclick="currentSlideU(12)"></span>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
 
+      <!-- Valle Modal -->
+      <div class="modal-containerV">
+        <div class="modal modal-close">
+          <p class="close">X</p>
+          <div class="modal-textos">
+            <!-- Slideshow container -->
+            <div class="slideshowPrograms programsSlider__container">
+              <!-- Full-width images with number and caption text -->
+              <div class="valleSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">1 / 6</div>
+                <p>Caña y cafe</p>
+                <div class="programsSlider__text">Caption Text</div>
+              </div>
 
+              <div class="valleSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">2 / 6</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/slider/slider_2.jpg"
+                />
+                <div class="programsSlider__text">Caption Two</div>
+              </div>
 
-    <!-- Valle Modal -->
-    <div class="modal-containerV">
-      <div class="modal modal-close">
-        <p class="close">X</p>
-        <div class="modal-textos">
-          <!-- Slideshow container -->
-          <div class="slideshowPrograms programsSlider__container">
+              <div class="valleSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">3 / 6</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/slider/slider_3.jpg"
+                />
+                <div class="programsSlider__text">Caption Three</div>
+              </div>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="valleSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">1 / 6</div>
-              <p>Caña y cafe</p>
-              <div class="programsSlider__text">Caption Text</div>
-            </div>
+              <div class="valleSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">4 / 6</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/slider/slider_4.jpg"
+                />
+                <div class="programsSlider__text">Caption Three</div>
+              </div>
 
-            <div class="valleSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">2 / 6</div>
-              <img class="programsSlider__image" src="./assets/img/slider/slider_2.jpg">
-              <div class="programsSlider__text">Caption Two</div>
-            </div>
+              <div class="valleSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">5 / 6</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/slider/slider_5.jpg"
+                />
+                <div class="programsSlider__text">Caption Three</div>
+              </div>
 
-            <div class="valleSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">3 / 6</div>
-              <img class="programsSlider__image" src="./assets/img/slider/slider_3.jpg">
-              <div class="programsSlider__text">Caption Three</div>
-            </div>
+              <div class="valleSlidesPrograms fade programsSlider__item">
+                <div class="progNumbertext">6 / 6</div>
+                <img
+                  class="programsSlider__image"
+                  src="./assets/img/slider/slider_6.jpg"
+                />
+                <div class="programsSlider__text">Caption Three</div>
+              </div>
 
-            <div class="valleSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">4 / 6</div>
-              <img class="programsSlider__image" src="./assets/img/slider/slider_4.jpg">
-              <div class="programsSlider__text">Caption Three</div>
-            </div>
-
-            <div class="valleSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">5 / 6</div>
-              <img class="programsSlider__image" src="./assets/img/slider/slider_5.jpg">
-              <div class="programsSlider__text">Caption Three</div>
-            </div>
-
-            <div class="valleSlidesPrograms fade programsSlider__item">
-              <div class="progNumbertext">6 / 6</div>
-              <img class="programsSlider__image" src="./assets/img/slider/slider_6.jpg">
-              <div class="programsSlider__text">Caption Three</div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="progPrev" onclick="plusSlidesV(-1)">&#10094;</a>
-            <a class="progNext" onclick="plusSlidesV(1)">&#10095;</a>
-            <!-- The dots/circles -->
-            <div class="programsSlider__buttons" style="text-align:center">
-              <span class="progDotV" onclick="currentSlideV(1)"></span>
-              <span class="progDotV" onclick="currentSlideV(2)"></span>
-              <span class="progDotV" onclick="currentSlideV(3)"></span>
-              <span class="progDotV" onclick="currentSlideV(4)"></span>
-              <span class="progDotV" onclick="currentSlideV(5)"></span>
-              <span class="progDotV" onclick="currentSlideV(6)"></span>
+              <!-- Next and previous buttons -->
+              <a class="progPrev" onclick="plusSlidesV(-1)">&#10094;</a>
+              <a class="progNext" onclick="plusSlidesV(1)">&#10095;</a>
+              <!-- The dots/circles -->
+              <div class="programsSlider__buttons" style="text-align: center">
+                <span class="progDotV" onclick="currentSlideV(1)"></span>
+                <span class="progDotV" onclick="currentSlideV(2)"></span>
+                <span class="progDotV" onclick="currentSlideV(3)"></span>
+                <span class="progDotV" onclick="currentSlideV(4)"></span>
+                <span class="progDotV" onclick="currentSlideV(5)"></span>
+                <span class="progDotV" onclick="currentSlideV(6)"></span>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="footer__links">
-      <a target="_blank" href="https://drive.google.com/file/d/1ishJtYTOmNYKftv_X2j_LKaUuxEAlJSZ/view" class="politicas">Politicas de privacidad</a>
-      <a target="_blank" href="https://drive.google.com/file/d/1nB-E81i1x39zH0zRWM6jMGifQ29eC6Sh/view" class="politicas">Aviso de privacidad</a>
-    </div>
+    <footer class="footer">
+      <div class="footer__links">
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1ishJtYTOmNYKftv_X2j_LKaUuxEAlJSZ/view"
+          class="politicas"
+          >Politicas de privacidad</a
+        >
+        <a
+          target="_blank"
+          href="https://drive.google.com/file/d/1nB-E81i1x39zH0zRWM6jMGifQ29eC6Sh/view"
+          class="politicas"
+          >Aviso de privacidad</a
+        >
+      </div>
 
-    <div class="contenedor-redes">
-      <a target="_blank" href="https://www.linkedin.com/company/vive-la-cumbre/">
-        <img src="./assets/img/signo-de-linkedin.png" alt="LinkedIn">
-      </a>
-      <a target="_blank" href="https://www.instagram.com/vivelacumbre/">
-        <img src="./assets/img/instagram.png" alt="instagram">
-      </a>
-      <a target="_blank" href="https://www.facebook.com/vivelacumbre">
-        <img src="./assets/img/facebook.png" alt="facebook">
-      </a>
-    </div>
+      <div class="contenedor-redes">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/company/vive-la-cumbre/"
+        >
+          <img src="./assets/img/signo-de-linkedin.png" alt="LinkedIn" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/vivelacumbre/">
+          <img src="./assets/img/instagram.png" alt="instagram" />
+        </a>
+        <a target="_blank" href="https://www.facebook.com/vivelacumbre">
+          <img src="./assets/img/facebook.png" alt="facebook" />
+        </a>
+      </div>
 
-    <p class="citacion">
-      Desarrollado por:
-      <br>
-      <span>
-        <a target="_blank" href="https://www.linkedin.com/in/juanpa-ruiz/"> Juan Pablo Ruiz</a> - <a target="_blank" href="https://www.linkedin.com/in/erick-vergara-a782691a5/">Erick Vergara</a>
-      </span>
-    </p>
-    <div class="footer__additional_info">
-      <p>
-        Info adicional:
-        <a target="_blank" href="mailto:contacto@vivelacumbre.org">contacto@vivelacumbre.org</a>
+      <p class="citacion">
+        Desarrollado por:
+        <br />
+        <span>
+          <a target="_blank" href="https://www.linkedin.com/in/juanpa-ruiz/">
+            Juan Pablo Ruiz</a
+          >
+          -
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/erick-vergara-a782691a5/"
+            >Erick Vergara</a
+          >
+        </span>
       </p>
-      <p>
-        Fundación Vive la Cumbre somos una organización sin ánimo de lucro NIT <b>901.472.881</b>
-      </p>
-    </div>
-  </footer>
-  <script src="./js/slider.js"></script>
-  <script src="./js/programs/sliderUraba.js"></script>
-  <script src="./js/programs/sliderValle.js"></script>
-  <script src="./js/team/index.js"></script>
-  <script src="./js/programs/modal.js"></script>
-</body>
+      <div class="footer__additional_info">
+        <p>
+          Info adicional:
+          <a target="_blank" href="mailto:contacto@vivelacumbre.org"
+            >contacto@vivelacumbre.org</a
+          >
+        </p>
+        <p>
+          Fundación Vive la Cumbre somos una organización sin ánimo de lucro NIT
+          <b>901.472.881</b>
+        </p>
+      </div>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/programs/sliderUraba.js"></script>
+    <script src="./js/programs/sliderValle.js"></script>
+    <script src="./js/team/index.js"></script>
+    <script src="./js/programs/modal.js"></script>
+  </body>
 </html>
