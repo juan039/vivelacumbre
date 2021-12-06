@@ -1,0 +1,69 @@
+@import '../abstracts/variables';
+
+.news {
+  &__title {
+    margin: 32px 0 24px;
+    text-align: center;
+  }
+
+  &__container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  &__item {
+    border-radius: 10px;
+    border: 1px solid $color-blue;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 15px;
+    max-width: 500px;
+    width: 100%;
+    display: inline-block;
+
+    &__link {
+      text-decoration: none;
+      color: $color-black;
+      display: flex;
+      overflow: hidden;
+      white-space: normal;
+    }
+
+    &__image {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+
+    &__content {
+      margin-left: 1.5em;
+    
+    }
+  
+    &__title {
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      max-height: 3.6em;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    &__description {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    & + & {
+      margin-left: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 600px){
+  .news {
+    display: flex;
+  }
+}
