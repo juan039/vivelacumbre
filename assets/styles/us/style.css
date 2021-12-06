@@ -23,6 +23,11 @@
   width: 100%;
 }
 
+.us__ods__separator {
+  border: 1px solid #05aacf;
+  margin: 1.5rem 0;
+}
+
 .us__ods__goal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +35,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 1em;
 }
 
 .us__ods__goal img {
@@ -39,6 +47,14 @@
 
 .us__ods__goal + .us__ods__goal {
   margin-top: 2rem;
+}
+
+.us__ods__goal--4 {
+  border-color: #c8202f;
+}
+
+.us__ods__goal--13 {
+  border-color: #407f46;
 }
 
 .us.section-linked {

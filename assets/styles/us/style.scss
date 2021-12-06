@@ -32,9 +32,17 @@
   }
   
   &__ods {
+    &__separator {
+      border: 1px solid $color-blue;
+      margin: 1.5rem 0;
+    }
+
     &__goal {
       display: flex;
       align-items: center;
+      border-radius: 10px;
+      border: 1px solid;
+      padding: 1em;
 
       img {
         width: 150px;
@@ -44,6 +52,14 @@
       & + & {
         margin-top: 2rem;
       }
+
+      &--4 {
+        border-color: #c8202f;
+      } 
+      
+      &--13 {
+        border-color: #407f46;
+      } 
     }
   }
 
