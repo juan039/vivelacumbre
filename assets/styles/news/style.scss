@@ -1,6 +1,11 @@
 @import '../abstracts/variables';
 
 .news {
+  &.section-linked {
+    padding-top: 45px;
+    margin-top: -45px;
+  }
+
   &__title {
     margin: 32px 0 24px;
     text-align: center;
@@ -62,8 +67,8 @@
   }
 }
 
-@media screen and (min-width: 600px){
-  .news {
-    display: flex;
-  }
-}
+// @media screen and (min-width: 600px){
+//   .news {
+//     display: flex;
+//   }
+// }

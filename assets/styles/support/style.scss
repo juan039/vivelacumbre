@@ -2,6 +2,17 @@
 
 .support {
   text-align: center;
+
+  &.section-linked {
+    padding-top: 45px;
+    margin-top: -45px;
+  }
+
+  &__title {
+    margin: 32px 0 24px;
+    text-align: center;
+  }
+
   .text-description {
     padding: 3vh 0 5vh;
   }

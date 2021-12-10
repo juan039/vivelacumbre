@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./assets/styles/programs/programs.css">
   <link rel="stylesheet" href="./assets/styles/news/style.css">
   <link rel="stylesheet" href="./assets/styles/support/style.css">
+  <link rel="stylesheet" href="./assets/styles/form/style.css">
   <link rel="stylesheet" href="./assets/styles/footer/footer.css">
   <link rel="stylesheet" href="./assets/styles/programs/ProgramsSlider/programsSlider.css">
 </head>
@@ -29,9 +30,9 @@
           <li><a href="#">Inicio</a></li>
           <li><a href="#us">Somos</a></li>
           <li><a href="#programs">Programas</a></li>
-          <li><a href="#">Noticias</a></li>
+          <li><a href="#news">Noticias</a></li>
           <li><a href="#support">Apoya</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -327,7 +328,7 @@
     </div>
   </section>
 
-  <section id="news">
+  <section id="news" class="news section-linked">
     <h2 class="news__title">Noticias</h2>
     <div class="news__container">
       <article class="news__item">
@@ -436,10 +437,11 @@
           </div>
         </a>
       </article>
-    </section>
+    </div>
+  </section>
      
-  <section id="support" class="support">
-    <h2>Apoya</h2>
+  <section id="support" class="support section-linked">
+    <h2 class="support__title">Apoya</h2>
 
     <div class="container__father">
       <div class="container__description">
@@ -471,6 +473,19 @@
         </article>
       </div>
     </div>
+  </section>
+
+  <section id="contact" class="contact section-linked">
+    <h2 class="contact__title">Contacto</h2>
+    <form target="_blank" action="https://formsubmit.co/22526cc0fbd795424f7e9e1bb7e3d6ff" method="POST" id="form" class="topBefore">
+      <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+      <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+      <input name="_subject" placeholder="Asunto del correo" required>
+      <input type="hidden" name="_next" value="https://vivelacumbre.org/">
+      <textarea placeholder="Tu mensaje" class="form-control" name="message" rows="10" required></textarea>
+
+      <button id="submit" type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+    </form>
   </section>
 
   <footer class="footer">

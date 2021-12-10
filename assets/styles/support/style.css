@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.support.section-linked {
+  padding-top: 45px;
+  margin-top: -45px;
+}
+
+.support__title {
+  margin: 32px 0 24px;
+  text-align: center;
+}
+
 .support .text-description {
   padding: 3vh 0 5vh;
 }

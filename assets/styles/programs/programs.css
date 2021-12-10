@@ -97,6 +97,10 @@
   text-decoration: none;
 }
 
+.programs__travel__image {
+  width: 100%;
+}
+
 .programs__fotodesc {
   padding: 0px 32px;
 }
@@ -139,7 +143,9 @@
   .programs__travel__image {
     max-width: 1080px;
     width: 100%;
-    height: 45vh;
+    height: 30vh;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 /*# sourceMappingURL=programs.css.map */
