@@ -27,6 +27,10 @@
   src: url(../fonts/DINPro.otf) format("opentype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "DINPro", sans-serif;
 }
