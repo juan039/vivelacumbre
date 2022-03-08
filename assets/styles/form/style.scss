@@ -144,6 +144,20 @@
     color: #e2dedb;
   }
   
+  &__checkbox {
+    &-container {
+      display: flex;
+      padding: 15px;
+      border: solid 1px $color-orange;
+
+      input[type="checkbox"] {
+        width: auto;
+        height: 20px;
+        margin-right: 1em;
+      }
+    }
+  }
+
   #submit {
     width: 100%;
     max-width: 500px;
