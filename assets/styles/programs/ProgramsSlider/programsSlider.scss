@@ -11,7 +11,7 @@
 }
 
 /* Next & previous buttons */
-.progPrev, .progNext {
+.progNextPrev {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -24,22 +24,22 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  border-radius: 3px 0 0 3px;
+  background-color: rgba(0,0,0,0.2);
 }
 
 /* Position the "next button" to the right */
-.progNext {
+.Next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
-  /* Position the "prev button" to the left */
-  .progPrev {
-      left: 0;
-      border-radius: 3px 0 0 3px;
-    }
+.prev{
+  left: 0;
+}
+
 
 /* On hover, add a black background color with a little bit see-through */
-.progPrev:hover, .progNext:hover {
+.progNextPrev:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -93,18 +93,15 @@
   }
 
   &__buttons {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 10px;
   }
   &__item {
     height: inherit;
   }
   &__image {
-    width: 67vw;
-    height: 45vh;
-    object-fit: cover;
+    margin-top: 10vh;
+    width: 65vw;
+    object-fit: contain;
   }
 
   /* Caption text */
@@ -120,6 +117,7 @@
 @media screen and (min-width: 600px){
   .programsSlider{
     &__image {
+      margin-top: 0;
       height: 50vh;
     }
   }
