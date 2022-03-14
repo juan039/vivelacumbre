@@ -8,7 +8,7 @@
   },
   {
     "name": "Ana Lucía",
-    "photo_url": "https://joeschmoe.io/api/v1/female/",
+    "photo_url": "./assets/img/Ana.png",
     "nickname": "",
     "role": "Gestora de travesía (Del Urabá)",
     "linkedin": "https://www.linkedin.com/in/ana-lucía-marimón-usuga-1a6a37122/"
@@ -67,6 +67,6 @@
     "photo_url": "./assets/img/Vane.png",
     "nickname": "",
     "role": "Comunicaciones",
-    "linkedin": ""
+    "linkedin": "http://linkedin.com/in/vanessa-ortiz-rios-034b15233"
   }
 ]
