@@ -113,8 +113,9 @@
 }
 
 .programsSlider__image {
-  margin-top: 10vh;
+  margin-top: 5vh;
   width: 65vw;
+  height: 35vh;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -130,7 +131,7 @@
 @media screen and (min-width: 600px) {
   .programsSlider__image {
     margin-top: 0;
-    height: 50vh;
+    height: 47vh;
   }
   .progDotU, .progDotV {
     height: 15px;
