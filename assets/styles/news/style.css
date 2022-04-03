@@ -62,6 +62,11 @@
   overflow: hidden;
 }
 
+.news__item__source {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
 .news__item + .news__item {
   margin-left: 2rem;
 }
