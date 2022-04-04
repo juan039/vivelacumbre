@@ -7,6 +7,10 @@
   margin: 32px 0 24px;
 }
 
+.us__vision {
+  display: none;
+}
+
 .us__mission, .us__vision, .us__methodology, .us__ods {
   margin: 24px 0;
 }
