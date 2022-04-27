@@ -101,10 +101,6 @@
   width: 100%;
 }
 
-.programs__fotodesc {
-  padding: 0px 32px;
-}
-
 .programs.section-linked {
   padding-top: 45px;
   margin-top: -45px;
@@ -132,9 +128,6 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .programs__fotodesc {
-    padding: 0;
   }
   .programs__travel {
     width: 40%;
