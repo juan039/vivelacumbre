@@ -1,0 +1,110 @@
+@import '../abstracts/variables';
+
+.us {
+  padding: 0 24px;
+
+  &__title {
+    text-align: center;
+    margin: 32px 0 24px;
+  }
+
+  &__vision {
+    display: none;
+  }
+
+  &__mission,
+  &__vision,
+  &__methodology,
+  &__ods {
+    margin: 24px 0;
+
+    &__title {
+      margin: 16px 16px;
+    }
+
+    &__description {
+      strong {
+        color: $color-orange;
+      }
+    }
+  }
+
+  &__methodology {
+    &__image {
+      width: 100%;
+    }
+  }
+  
+  &__ods {
+    &__separator {
+      border: 1px solid $color-blue;
+      margin: 1.5rem 0;
+    }
+
+    &__goal {
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      border: 1px solid;
+      padding: 1em;
+
+      img {
+        width: 150px;
+        margin-right: 1.5rem;
+      }
+
+      & + & {
+        margin-top: 2rem;
+      }
+
+      &--4 {
+        border-color: #c8202f;
+      } 
+      
+      &--13 {
+        border-color: #407f46;
+      } 
+    }
+  }
+
+  &.section-linked {
+    padding-top: 45px;
+    margin-top: -45px;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .us {
+    padding: 0 32px;
+    max-width: 1080px;
+    margin: auto;
+
+    &__vision {
+      text-align: end;
+    }
+
+    &__methodology {
+      text-align: center;
+      &__image {
+       max-width: 1080px; 
+      }
+    }
+
+    &__ods {
+      &__goal {
+        img {
+          width: 200px;
+        }
+
+        &--reverse {
+          flex-direction: row-reverse;
+    
+          img {
+            margin-right: 0;
+            margin-left: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

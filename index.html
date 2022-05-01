@@ -5,11 +5,610 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vive La Cumbre</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" type="image/png" href="./assets/img/favicon/icon_16.png" sizes="16x16"> 
+  <link rel="icon" type="image/png" href="./assets/img/favicon/icon_40.png" sizes="32x32">
+
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/navBar/navBar.css">
+  <link rel="stylesheet" href="./assets/styles/components/slider/style.css">
+  <link rel="stylesheet" href="./assets/styles/us/style.css">
+  <link rel="stylesheet" href="./assets/styles/team/team.css">
+  <link rel="stylesheet" href="./assets/styles/programs/programs.css">
+  <link rel="stylesheet" href="./assets/styles/news/style.css">
+  <link rel="stylesheet" href="./assets/styles/support/style.css">
+  <link rel="stylesheet" href="./assets/styles/form/style.css">
+  <link rel="stylesheet" href="./assets/styles/footer/footer.css">
+  <link rel="stylesheet" href="./assets/styles/programs/ProgramsSlider/programsSlider.css">
 </head>
 <body>
-  <div class="under-construction__container">
-    <img src="./assets/img/under_construction.png" alt="Imagen de pagina en construcción" class="under-construction__image">
-  </div>
+  <header>
+    <img src="./assets/img/Logo_blanco.png" alt="" class="logo"/>
+    <nav>
+      <div class="menu">
+        <input type="checkbox" id="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="navbarList">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#us">Somos</a></li>
+          <li><a href="#programs">Programas</a></li>
+          <li><a href="#news">Noticias</a></li>
+          <li><a href="#support">Apoya</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Slideshow container -->
+    <div class="slideshow-container slider__container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade slider__item">
+        <div class="numbertext">1 / 6</div>
+        <img class="slider__image" src="./assets/img/slider/slider_1.jpg">
+      </div>
+
+      <div class="mySlides fade slider__item">
+        <div class="numbertext">2 / 6</div>
+        <img class="slider__image" src="./assets/img/slider/slider_2.jpg">
+      </div>
+
+      <div class="mySlides fade slider__item">
+        <div class="numbertext">3 / 6</div>
+        <img class="slider__image" src="./assets/img/slider/slider_3.jpg">
+      </div>
+
+      <div class="mySlides fade slider__item">
+        <div class="numbertext">4 / 6</div>
+        <img class="slider__image" src="./assets/img/slider/slider_4.jpg">
+      </div>
+
+      <div class="mySlides fade slider__item">
+        <div class="numbertext">5 / 6</div>
+        <img class="slider__image" src="./assets/img/slider/slider_5.jpg">
+      </div>
+
+      <div class="mySlides fade slider__item">
+        <div class="numbertext">6 / 6</div>
+        <img class="slider__image" src="./assets/img/slider/slider_6.jpg">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- The dots/circles -->
+      <div class="slider__buttons" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+  </main>
+
+  <section id="us" class="section-linked us">
+    <h2 class="us__title">Somos</h2>
+    <article class="us__mission">
+      <h3 class="us__mission__title">Misión</h3>
+      <p class="us__mission__description">
+        Fortalecer las <strong>habilidades para la vida</strong> y la conciencia ambiental de jóvenes con potencial de liderazgo colectivo en contextos afectados por el conflicto armado colombiano, a través de <strong>experiencias retadoras</strong> enmarcadas en la educación de aventura
+      </p>
+    </article>
+    <article class="us__vision">
+      <h3 class="us__vision__title">Visión</h3>
+      <p class="us__vision__description">
+        [PENDIENTE]
+      </p>
+    </article>
+    <article class="us__methodology">
+      <h3 class="us__methodology__title">Metodología</h3>
+      <img src="./assets/img/Metodologia.png" alt="Imagen que muestra la metodología usada en vive la cumbre" class="us__methodology__image">
+    </article>
+    <article class="us__ods">
+      <h3 class="us__ods__title">Objetivos de Desarrollo Sostenible</h3>
+      <div class="us__ods__goal us__ods__goal--4">
+        <img src="./assets/img/ods/goal_4.jpeg" alt="">
+        <p class="us__ods__description">Trabajamos en el marco de la educación informal de calidad para asegurar que los jóvenes adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible, entre otras cosas mediante la educación para el desarrollo sostenible, los estilos de vida sostenibles y la valoración de la diversidad.</p>
+      </div>
+      <hr class="us__ods__separator" />
+      <div class="us__ods__goal us__ods__goal--13 us__ods__goal--reverse">
+        <img src="./assets/img/ods/goal_13.jpeg" alt="">
+        <p class="us__ods__description">Emprendemos acciones por el clima, buscando mejorar la educación, la sensibilización y la capacidad humana e institucional respecto de la mitigación del cambio climático, la adaptación a él, la reducción de sus efectos y la alerta temprana.</p>
+      </div>
+    </article>
+  </section>
+  
+  <section id="team" class="">
+    <h2 class="team__title">Equipo</h2>
+
+    <div class="team">
+    </div>
+  </section>
+
+  <section id="programs" class="section-linked programs">
+    <h2 class="programs__title">Programas</h2>
+    <p class="programs__description">Desarrollamos travesías educativas para llevar a jóvenes con potencial de liderazgo
+      por una experiencia transformadora en Manizales y el Nevado de Santa Isabel.
+      Trabajamos con dos comunidades en alianza con <a href="https://ensenaporcolombia.org/" class="programs__enseña" target="_blank">Enseña por Colombia</a>.
+    </p>
+    <div class="programs__flex">
+      <a href="#" class="programs__travel cta-u">
+        <article >
+          <img src="./assets/img/uraba.png" alt="Urabá" class="programs__travel__image">
+          <p>Desde 2016</p>
+        </article>
+      </a>
+      <a href="#" class="programs__travel cta-v">
+        <article>
+          <img src="./assets/img/valle del cauca.png" alt="Risaralda y Valle del cauca" class="programs__travel__image">
+          <p>Desde 2021</p>   
+        </article>
+      </a>
+
+    </div>
+    <!-- Uraba Modal -->
+    <div class="modal-containerU">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <div class="modal-textos">
+          <!-- Slideshow container -->
+          <div class="slideshowPrograms programsSlider__container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">1 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/Logo-uraba.png">
+              <div class="programsSlider__text">anualmente un grupo de jóvenes emprende su travesía y sale del calor del Urabá para conocer otro ecosistema, el páramo.</div>
+            </div>
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">2 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/1-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Él es Jhon Carlos, joven indígena Embera y aventurero 2019</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">3 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/2-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Con 16 años soñaba con ser el líder de su comunidad</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">4 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/3-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Estando en 6to logró ser promovido a 7to para reducir su brecha de edad</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">5 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/4-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Los fines de semana, regresa a su comunidad para aportar en las labores de agricultura</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">6 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/5-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Junto a 27 aventureres más emprendió una travesía educativa para conocer donde nace la vida</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">7 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/6-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Personas diversas, a pesar de ser de la misma región, pero a quienes pudo compartirles algo de su cultura</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">8 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/7-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Su fascinación tanto con Manizales y lo urbano, como con el Parque de Los Nevados, fue notoria en su experiencia</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">9 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/8-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Junto a su cordada lograron llegar a la meta, el borde del glaciar del Nevado Santa Isabel. Aquí apenas empezaba la cuesta.</div>
+            </div>
+
+             <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">10 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/9-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Al inicio, cerraba el grupo</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">11 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/10-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Pero su resistencia, por estar acostumbrado a caminar largas distancias, le permitió llegar pronto a la nieve</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">12 / 13</div>
+              <img class="programsSlider__image" src="./assets/img/programs/uraba/11-Jhon-Carlos-min.jpg">
+              <div class="programsSlider__text">Las habilidades que más desarrolló fueron el autoconocimiento y trabajo en equipo</div>
+            </div>
+
+            <div class="urabaSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">13 / 13</div>
+              <iframe  class="programsSlider__image" width="950" height="534" src="https://www.youtube.com/embed/YVGnugG2yOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="programsSlider__text">Conoce más</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="progNextPrev prev" onclick="plusSlidesU(-1)">&#10094;</a>
+            <a class="progNextPrev next" onclick="plusSlidesU(1)">&#10095;</a>
+            <!-- The dots/circles -->
+            <div class="programsSlider__buttons" style="text-align:center">
+              <span class="progDotU" onclick="currentSlideU(1)"></span>
+              <span class="progDotU" onclick="currentSlideU(2)"></span>
+              <span class="progDotU" onclick="currentSlideU(3)"></span>
+              <span class="progDotU" onclick="currentSlideU(4)"></span>
+              <span class="progDotU" onclick="currentSlideU(5)"></span>
+              <span class="progDotU" onclick="currentSlideU(6)"></span>
+              <span class="progDotU" onclick="currentSlideU(7)"></span>
+              <span class="progDotU" onclick="currentSlideU(8)"></span>
+              <span class="progDotU" onclick="currentSlideU(9)"></span>
+              <span class="progDotU" onclick="currentSlideU(10)"></span>
+              <span class="progDotU" onclick="currentSlideU(11)"></span>
+              <span class="progDotU" onclick="currentSlideU(12)"></span>
+              <span class="progDotU" onclick="currentSlideU(13)"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- Valle Modal -->
+    <div class="modal-containerV">
+      <div class="modal modal-close">
+        <p class="close">X</p>
+        <div class="modal-textos">
+          <!-- Slideshow container -->
+          <div class="slideshowPrograms programsSlider__container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">1 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/logo-valle.png">
+              <div class="programsSlider__text">En este año realizamos la primera travesía con jóvenes del Valle del Cauca y Risaralda, un grupo regionalmente más diverso.</div>
+            </div>
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">2 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/1 - Profes.jpeg">
+              <div class="programsSlider__text">Todo comienza con profes voluntarios y voluntarias que deciden complementar 
+                su actividad docente con este proyecto de educación experiencial y de aventura.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">3 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/2 - aventureres Cali.jpg">
+              <div class="programsSlider__text">La travesía arranca con caña, en Cali, donde se montan al bus les aventureres 
+                de la capital del Valle.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">4 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/3 - Aventureres Ginebra.jpg">
+              <div class="programsSlider__text">De camino hacia el eje cafetero, pasamos por Ginebra y Tuluá.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">5 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/4 - aventureres Santuario.jpg">
+              <div class="programsSlider__text">Nuestro último grupo de aventureres se suma en Santuario, Risaralda. Así se 
+                completa con caña y café.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">6 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/5 - Viterbo.jpg">
+              <div class="programsSlider__text">Viterbo es nuestra primera parada con el grupo completo y nos sirve de aclimatación 
+                física y emocional.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">7 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/6 - Manizales.jpg">
+              <div class="programsSlider__text">Manizales es nuestra base en la travesía y nos permite, en diferentes espacios, 
+                proponer actividades en torno a la curiosidad, sostenibilidad y trabajo en equipo, entre otras.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">8 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/7 - Nevado.jpg">
+              <div class="programsSlider__text">Subir al Nevado de Santa Isabel es el momento cúspide.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">9 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/8 - nevado.jpg">
+              <div class="programsSlider__text">La montaña nos enseña y cobra sentido todo lo que hemos aprendido en la semana.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">10 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/9 -  Aventurera.jpg">
+              <div class="programsSlider__text">La travesía le permite a cada aventurere conocerse mejor y entender su rol en la 
+                naturaleza.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">11 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/10 - colectivo.jpg">
+              <div class="programsSlider__text">Además les permite asumir retos con otros y desarrollar su liderazgo colectivo.</div>
+            </div>
+
+            <div class="valleSlidesPrograms fade programsSlider__item">
+              <div class="progNumbertext">12 / 12</div>
+              <img class="programsSlider__image" src="./assets/img/programs/valle/11 - Profes.jpg">
+              <div class="programsSlider__text">Pero también permite a profes desarrollar su liderazgo y gestar aprendizajes más 
+                allá del aula.</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="progNextPrev prev" onclick="plusSlidesV(-1)">&#10094;</a>
+            <a class="progNextPrev next" onclick="plusSlidesV(1)">&#10095;</a>
+            <!-- The dots/circles -->
+            <div class="programsSlider__buttons" style="text-align:center">
+              <span class="progDotV" onclick="currentSlideV(1)"></span>
+              <span class="progDotV" onclick="currentSlideV(2)"></span>
+              <span class="progDotV" onclick="currentSlideV(3)"></span>
+              <span class="progDotV" onclick="currentSlideV(4)"></span>
+              <span class="progDotV" onclick="currentSlideV(5)"></span>
+              <span class="progDotV" onclick="currentSlideV(6)"></span>
+              <span class="progDotV" onclick="currentSlideV(7)"></span>
+              <span class="progDotV" onclick="currentSlideV(8)"></span>
+              <span class="progDotV" onclick="currentSlideV(9)"></span>
+              <span class="progDotV" onclick="currentSlideV(10)"></span>
+              <span class="progDotV" onclick="currentSlideV(11)"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="news section-linked">
+    <h2 class="news__title">Noticias</h2>
+    <div class="news__container">
+      <article class="news__item">
+        <a
+          href="https://www.lapatria.com/caldas/el-liderazgo-de-30-jovenes-de-uraba-los-llevo-4965-metros-de-altura-449404"
+          class="news__item__link"
+          target="_blank"
+        >
+          <img src="https://www.lapatria.com/sites/default/files/imagenprincipal/2019/Diciembre/uraba_nieve_svillegas-1_easy-resize.com_.jpg" alt="" class="news__item__image" />
+          <div class="news__item__content">
+            <h3 class="news__item__title">
+              El liderazgo de 30 jóvenes de Urabá los llevó a 4.965 metros de altura
+            </h3>
+            <p class="news__item__description">
+              Proyecto social que premia a estudiantes destacados. Aprenden a trabajar en equipo, de liderazgo y conciencia ambiental. Logro.
+            </p>
+            <p class="news__item__source">
+              Fuente: www.lapatria.com
+            </p>
+          </div>
+        </a>
+      </article>
+      <article class="news__item">
+        <a
+          href="https://www.wradio.com.co/noticias/regionales/del-uraba-a-la-nieve-el-proyecto-que-busca-brindar-una-mejor-educacion/20190918/nota/3954977.aspx"
+          class="news__item__link"
+          target="_blank"
+        >
+          <img src="https://www.wradio.com.co/resizer/1ey85GAKSGAAgBrUiaay2x-we-M=/889x500/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/F3MSNSASXZBUJO5ETBB6I2T2RY.jpg" alt="" class="news__item__image" />
+          <div class="news__item__content">
+            <h3 class="news__item__title">
+              Del Urabá a La Nieve, el proyecto que busca brindar una mejor educación
+            </h3>
+            <p class="news__item__description">
+              La profesora Claudia manifestó que el proyecto busca sacar a los estudiantes del aula de clases y llevarlos a un nevado para tener un momento de reflexión y autoconocimiento.
+            </p>
+            <p class="news__item__source">
+              Fuente: www.wradio.com.co
+            </p>
+          </div>
+        </a>
+      </article>
+      <article class="news__item">
+        <a
+          href="https://www.semana.com/medio-ambiente/articulo/en-que-consiste-el-programa-del-uraba-a-la-nieve/47089/"
+          class="news__item__link"
+          target="_blank"
+        >
+          <img
+            src="https://www.semana.com/resizer/UtFoVywXJ-su1CDUmTGC365_LHA=/1200x646/filters:format(jpg):quality(50)/cloudfront-us-east-1.images.arcpublishing.com/semana/SZUTN4IXF5DE3JVWFO6LLFIVBQ.jpg"
+            alt=""
+            class="news__item__image"
+          />
+          <div class="news__item__content">
+            <h3 class="news__item__title">
+              Cuando 94 niños del Urabá conocieron la nieve
+            </h3>
+            <p class="news__item__description">
+              Desde hace tres años, los profesores de Enseña por Colombia se la juegan para ofrecer a los jóvenes del Urabá antioqueño una educación experiencial, que les permita fortalecer su liderazgo.
+            </p>
+            <p class="news__item__source">
+              Fuente: www.semana.com
+            </p>
+          </div>
+        </a>
+      </article>
+      <article class="news__item">
+        <a
+          href="https://sietepolas.com/2018/11/04/domingodeinvitadas-del-uraba-a-la-nieve/"
+          class="news__item__link"
+          target="_blank"
+        >
+          <img
+            src="https://sietepolas.files.wordpress.com/2018/11/equipazo.jpg"
+            alt=""
+            class="news__item__image"
+          />
+          <div class="news__item__content">
+            <h3 class="news__item__title">
+              #DomingoDeInvitadas: Del Urabá a la Nieve
+            </h3>
+            <p class="news__item__description">
+              Por: Daniela Casas, Laura Echeverry, Vanessa Ortiz, Natalia Ramos, Cintia Paola Ortega, Cristina Valdivieso, Sara Vargas 7 mujeres decidimos emprender una travesía y llevar a 34 estudiantes del Ura…
+            </p>
+            <p class="news__item__source">
+              Fuente: sietepolas.com
+            </p>
+          </div>
+        </a>
+      </article>
+      <article class="news__item">
+        <a
+          href="http://energialimpia.co/del-uraba-la-nieve-los-nevados-y-el-futuro-de-uraba/"
+          class="news__item__link"
+          target="_blank"
+        >
+          <img
+            src="http://energialimpia.co/wp-content/uploads/2018/10/32267089_1972167846432381_6310869007364784128_n.jpg"
+            alt=""
+            class="news__item__image"
+          />
+          <div class="news__item__content">
+            <h3 class="news__item__title">
+              Los nevados y el futuro de Urabá - Energía Limpia para Colombia
+            </h3>
+            <p class="news__item__description">
+              Del Urabá a la Nieve es una serie de expediciones que quieren acercar a jóvenes de municipios –rurales y urbanos– a conocer el lugar donde nace el agua.
+            </p>
+            <p class="news__item__source">
+              Fuente: energialimpia.co
+            </p>
+          </div>
+        </a>
+      </article>
+      <article class="news__item">
+        <a
+          href="https://www.bluradio.com/sociedad/jovenes-en-uraba-buscan-recursos-para-cumplir-el-sueno-de-conocer-la-nieve"
+          class="news__item__link"
+          target="_blank"
+        >
+          <img
+            src="https://caracoltv.brightspotcdn.com/dims4/default/e091dc8/2147483647/strip/true/crop/1280x672+0+91/resize/1200x630!/quality/90/?url=https%3A%2F%2Fcaracol-brightspot.s3-us-west-2.amazonaws.com%2Fassets%2Fbluradio%2Fbluradio.delurabaalanievefotodel_uraba_a_la_nieve_en_facebook.jpg"
+            alt=""
+            class="news__item__image"
+          />
+          <div class="news__item__content">
+            <h3 class="news__item__title">
+              Jóvenes en Urabá buscan recursos para cumplir el sueño de conocer la nieve
+            </h3>
+            <p class="news__item__description">
+              El proyecto busca que los jóvenes fortalezcan sus habilidades y de la importancia de trabajar en equipo.
+            </p>
+            <p class="news__item__source">
+              Fuente: www.bluradio.com
+            </p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+     
+  <section id="support" class="support section-linked">
+    <h2 class="support__title">Apoya</h2>
+
+    <div class="container__father">
+      <div class="container__description">
+        <img
+          src="./assets/img/support/Apoya.jpg"
+          alt="Imagen de apoyo"
+          class="img__principal"
+        />
+        <p class="text-description">
+          Si quieres apoyar a un(a) joven para que viva esta travesía y se
+          proyecte como líder sostenible, dona aquí.
+        </p>
+      </div>
+      <div class="container__payment">
+        <p class="special-text">
+          Escanea el código QR o usa nuestros datos bancarios.
+        </p>
+        <img
+          src="./assets/img/support/QRDigital.png"
+          alt="codigo QR"
+          class="img__qr"
+        />
+        <article>
+          <p>Bancolombia</p>
+          <p>Cuenta de Ahorros</p>
+          <p class="special-text">281-000008-36</p>
+          <p>Fundación Vive la Cumbre</p>
+          <p class="special-text">NIT 901472881-5</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section-linked">
+    <h2 class="contact__title">Contacto</h2>
+    <form target="_blank" action="https://formsubmit.co/22526cc0fbd795424f7e9e1bb7e3d6ff" method="POST" id="form" class="topBefore">
+      <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+      <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+      <input name="_subject" placeholder="Asunto del correo" required>
+      <input type="hidden" name="_next" value="https://vivelacumbre.org/">
+      <textarea placeholder="Tu mensaje" class="form-control" name="message" rows="10" required></textarea>
+      <div class="contact__checkbox-container">
+        <input type="checkbox" name="terms" id="checkbox" required>
+        <label for="checkbox"> Acepto las <a target="_blank" href="https://drive.google.com/file/d/1ishJtYTOmNYKftv_X2j_LKaUuxEAlJSZ/view" class="politicas">Politicas de privacidad</a>.</label>
+      </div>
+      <button id="submit" type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a target="_blank" href="https://drive.google.com/file/d/1ishJtYTOmNYKftv_X2j_LKaUuxEAlJSZ/view" class="politicas">Politicas de privacidad</a>
+      <a target="_blank" href="https://drive.google.com/file/d/1nB-E81i1x39zH0zRWM6jMGifQ29eC6Sh/view" class="politicas">Aviso de privacidad</a>
+      <a href="./rte.html" class="politicas">Régimen Tributario Especial</a>
+    </div>
+
+    <div class="contenedor-redes">
+      <a target="_blank" href="https://www.linkedin.com/company/vive-la-cumbre/">
+        <img src="./assets/img/signo-de-linkedin.png" alt="LinkedIn">
+      </a>
+      <a target="_blank" href="https://www.instagram.com/vivelacumbre/">
+        <img src="./assets/img/instagram.png" alt="instagram">
+      </a>
+      <a target="_blank" href="https://www.facebook.com/vivelacumbre">
+        <img src="./assets/img/facebook.png" alt="facebook">
+      </a>
+    </div>
+
+    <p class="citacion">
+      Desarrollado por:
+      <br>
+      <span>
+        <a target="_blank" href="https://www.linkedin.com/in/juanpa-ruiz/"> Juan Pablo Ruiz</a> - <a target="_blank" href="https://www.linkedin.com/in/erick-vergara-a782691a5/">Erick Vergara</a>
+      </span>
+    </p>
+    <div class="footer__additional_info">
+      <p>
+        Info adicional:
+        <a target="_blank" href="mailto:contacto@vivelacumbre.org">contacto@vivelacumbre.org</a>
+      </p>
+      <p>
+        Fundación Vive la Cumbre somos una organización sin ánimo de lucro NIT <b>901.472.881</b>
+      </p>
+    </div>
+  </footer>
+  <script src="./js/slider.js"></script>
+  <script src="./js/programs/sliderUraba.js"></script>
+  <script src="./js/programs/sliderValle.js"></script>
+  <script src="./js/team/index.js"></script>
+  <script src="./js/programs/modal.js"></script>
+  <script src="./js/closeNavBar.js"></script>
 </body>
 </html>

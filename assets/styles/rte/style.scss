@@ -1,0 +1,26 @@
+@import '../abstracts/variables';
+@import '../base/typography';
+
+
+.rte {
+  &__container {
+    padding-top: 45px;
+    min-height: calc(100vh - 85px);
+
+    ul {
+      margin-left: 1em;
+    }
+  }
+
+  &__title {
+    font-family: "Fleepavlop-thin", "DINPro", sans-serif;
+    text-align: center;
+    margin: 32px 0 24px;
+  }
+
+  &__content {
+    margin: auto;
+    padding: 32px;
+    max-width: 1080px;
+  }
+}

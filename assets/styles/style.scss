@@ -1,0 +1,28 @@
+@import './base/reset';
+@import './base/typography';
+@import './abstracts/variables';
+@import './base/scroll';
+
+body {
+  font-family: "DINPro", sans-serif;
+}
+h2 {
+  font-family: "Fleepavlop-thin", "DINPro", sans-serif;
+  font-size: 2.5em;
+}
+
+.under-construction {
+  &__container {
+    background: #4f4f4f;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  &__image {
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+  }
+}
