@@ -6,18 +6,13 @@ header {
   height: 45px;
   padding: 5px;
   top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   background-color: #ff7900;
   z-index: 10;
   /*decoracion de la lista desordenada*/
   /*Animación para que el menu se despliegue*/
 }
-
 header ul {
   width: 100%;
   position: absolute;
@@ -27,18 +22,14 @@ header ul {
   list-style: none;
   background: #f2f2f2;
   height: 0%;
-  -webkit-transition: height 0.5s ease;
   transition: height 0.5s ease;
   /*posicionamientoy hover de li*/
 }
-
 header ul li {
   position: relative;
-  -webkit-transition: background 0.5s;
   transition: background 0.5s;
   /*decoracion y hover de los link en a*/
 }
-
 header ul li a {
   font-family: "Fleepavlop-thin", "DINPro", sans-serif;
   display: block;
@@ -47,39 +38,31 @@ header ul li a {
   color: #000;
   padding: 16px 5%;
   line-height: 28px;
-  -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
-
 header ul li a:hover {
   color: #fff;
 }
-
 header ul li:hover {
   background: #05aacf;
   color: white;
 }
-
 header ul li:active {
   background: #4f4f4f;
   color: white;
 }
-
-header nav .menu input[type="checkbox"]:checked ~ ul {
+header nav .menu input[type=checkbox]:checked ~ ul {
   height: 360px;
-  -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
   -moz-transition: height 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
 }
-
 header .menu {
   padding-top: 3px;
   /*checkbox transparente y en primer plano con z index*/
   /*Animacion de movimiento en cruz*/
 }
-
 header .menu input {
   display: block;
   width: 30px;
@@ -88,7 +71,6 @@ header .menu input {
   z-index: 2;
   position: absolute;
 }
-
 header .menu span {
   display: block;
   width: 25px;
@@ -97,39 +79,25 @@ header .menu span {
   position: relative;
   background: #4f4f4f;
   z-index: 1;
-  -webkit-transform-origin: 3px 0px;
-          transform-origin: 3px 0px;
-  -webkit-transition: opacity 0.55s ease, -webkit-transform 0.5s ease;
-  transition: opacity 0.55s ease, -webkit-transform 0.5s ease;
+  transform-origin: 3px 0px;
   transition: transform 0.5s ease, opacity 0.55s ease;
-  transition: transform 0.5s ease, opacity 0.55s ease, -webkit-transform 0.5s ease;
 }
-
 header .menu span:first-child {
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  transform-origin: 0 0;
 }
-
 header .menu span:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
 }
-
 header .menu input:checked ~ span {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(2px, 1px);
-          transform: rotate(45deg) translate(2px, 1px);
+  transform: rotate(45deg) translate(2px, 1px);
 }
-
 header .menu input:checked ~ span:nth-last-child(3) {
   opacity: 0;
-  -webkit-transform: rotate(0deg) scale(1px, 0px);
-          transform: rotate(0deg) scale(1px, 0px);
+  transform: rotate(0deg) scale(1px, 0px);
 }
-
 header .menu input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(1px, 0px);
-          transform: rotate(-45deg) translate(1px, 0px);
+  transform: rotate(-45deg) translate(1px, 0px);
 }
 
 @media screen and (min-width: 600px) {
@@ -146,22 +114,15 @@ header .menu input:checked ~ span:nth-last-child(2) {
     right: 10%;
     top: 0;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
     background: #ff7900;
   }
   header nav .menu ul li {
     position: relative;
     border-radius: 0;
     margin-left: 15px;
-    -webkit-transition: background 0.2s;
     transition: background 0.2s;
     border-radius: 3px;
   }
@@ -174,8 +135,7 @@ header .menu input:checked ~ span:nth-last-child(2) {
   header nav .menu ul li:hover {
     background-color: #4f4f4f;
   }
-  header nav .menu input[type="checkbox"]:checked ~ ul {
+  header nav .menu input[type=checkbox]:checked ~ ul {
     height: auto;
   }
-}
-/*# sourceMappingURL=navBar.css.map */
+}/*# sourceMappingURL=navBar.css.map */

@@ -3,7 +3,6 @@
   padding: 0 24px;
   text-align: center;
 }
-
 .programs .modal-containerU, .programs .modal-containerV {
   opacity: 0;
   visibility: hidden;
@@ -13,47 +12,26 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .programs .modal {
   width: 65vw;
   height: 65vh;
   background: #fff;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   position: relative;
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
   transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
   border-radius: 10px;
 }
-
 .programs .modal-close {
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
+  transform: translateY(-200%);
 }
-
 .programs .close {
   position: absolute;
   top: 5px;
@@ -67,50 +45,35 @@
   cursor: pointer;
   border-radius: 50%;
 }
-
 .programs__title {
   margin: 32px 0 24px;
 }
-
 .programs__description {
   margin: 24px 0;
 }
-
 .programs__travel {
   margin: 24px 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-radius: 10px;
   border: 1px solid #05aacf;
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   color: #4f4f4f;
   padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-decoration: none;
 }
-
 .programs__travel__image {
   width: 100%;
 }
-
 .programs.section-linked {
   padding-top: 45px;
   margin-top: -45px;
 }
-
 .programs__enseña {
   text-decoration: none;
   color: #ff7900;
 }
-
 .programs__enseña:hover {
   color: #05aacf;
 }
@@ -122,12 +85,8 @@
     margin: auto;
   }
   .programs__flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .programs__travel {
     width: 40%;
@@ -140,5 +99,4 @@
     -o-object-fit: contain;
        object-fit: contain;
   }
-}
-/*# sourceMappingURL=programs.css.map */
+}/*# sourceMappingURL=programs.css.map */

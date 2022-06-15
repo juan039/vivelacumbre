@@ -1,149 +1,100 @@
 .contact {
   /* on hover placeholder */
 }
-
 .contact.section-linked {
   padding-top: 45px;
   margin-top: -45px;
 }
-
 .contact__title {
   margin: 32px 0 24px;
   text-align: center;
 }
-
-.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
-
-.contact input:focus::-webkit-input-placeholder, .contact textarea:focus::-webkit-input-placeholder {
+.contact input:focus::-moz-placeholder, .contact textarea:focus::-moz-placeholder {
   color: #bbb5af;
 }
-
-.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
-
 .contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
-
-.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
-  color: #aca49c;
-  font-size: 0.875em;
-}
-
 .contact input::placeholder, .contact textarea::placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
-
-.contact input:focus::-webkit-input-placeholder, .contact textarea::focus:placeholder {
+.contact input:focus::-moz-placeholder {
   color: #bbb5af;
 }
-
-.contact input:focus:-ms-input-placeholder, .contact textarea::focus:placeholder {
+.contact input:focus:-ms-input-placeholder {
   color: #bbb5af;
 }
-
-.contact input:focus::-ms-input-placeholder, .contact textarea::focus:placeholder {
-  color: #bbb5af;
-}
-
 .contact input:focus::placeholder, .contact textarea::focus:placeholder {
   color: #bbb5af;
 }
-
 .contact input::-ms-placeholder, .contact textarea::-ms-placeholder {
   color: #aca49c;
   font-size: 0.875em;
 }
-
 .contact input:focus::-ms-placeholder, .contact textarea:focus::-ms-placeholder {
   color: #bbb5af;
 }
-
-.contact input:hover::-webkit-input-placeholder, .contact textarea:hover::-webkit-input-placeholder {
+.contact input:hover::-moz-placeholder, .contact textarea:hover::-moz-placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
-
-.contact input:hover:focus::-webkit-input-placeholder, .contact textarea:hover:focus::-webkit-input-placeholder {
+.contact input:hover:focus::-moz-placeholder, .contact textarea:hover:focus::-moz-placeholder {
   color: #cbc6c1;
 }
-
-.contact input:hover::-webkit-input-placeholder, .contact textarea:hover::-webkit-input-placeholder {
+.contact input:hover::-moz-placeholder, .contact textarea:hover::-moz-placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
-
 .contact input:hover:-ms-input-placeholder, .contact textarea:hover:-ms-input-placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
-
-.contact input:hover::-ms-input-placeholder, .contact textarea:hover::-ms-input-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
 .contact input:hover::placeholder, .contact textarea:hover::placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
-
-.contact input:hover:focus::-webkit-input-placeholder, .contact textarea:hover:focus::-webkit-input-placeholder {
+.contact input:hover:focus::-moz-placeholder, .contact textarea:hover:focus::-moz-placeholder {
   color: #cbc6c1;
 }
-
 .contact input:hover:focus:-ms-input-placeholder, .contact textarea:hover:focus:-ms-input-placeholder {
   color: #cbc6c1;
 }
-
-.contact input:hover:focus::-ms-input-placeholder, .contact textarea:hover:focus::-ms-input-placeholder {
-  color: #cbc6c1;
-}
-
 .contact input:hover:focus::placeholder, .contact textarea:hover:focus::placeholder {
   color: #cbc6c1;
 }
-
-.contact input:hover::-webkit-input-placeholder, .contact textarea:hover::-webkit-input-placeholder {
+.contact input:hover::-moz-placeholder, .contact textarea:hover::-moz-placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
-
 .contact input:hover:-ms-input-placeholder, .contact textarea:hover:-ms-input-placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
-
-.contact input:hover::-ms-input-placeholder, .contact textarea:hover::-ms-input-placeholder {
-  color: #e2dedb;
-  font-size: 0.875em;
-}
-
 .contact input:hover::placeholder, .contact textarea:hover::placeholder {
   color: #e2dedb;
   font-size: 0.875em;
 }
-
 .contact input:hover:focus::-ms-placeholder, .contact textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
-
 .contact #form {
   position: relative;
   width: 85%;
   max-width: 500px;
   margin: 50px auto 100px auto;
 }
-
 .contact input {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.875em;
   width: 100%;
   height: 50px;
@@ -158,12 +109,10 @@
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
 }
-
 .contact input:hover {
   background: #ff7900;
   color: #e2dedb;
 }
-
 .contact textarea {
   width: 100%;
   max-width: 100%;
@@ -173,7 +122,7 @@
   background: transparent;
   outline: none;
   color: #000;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.875em;
   border: solid 1px #ff7900;
   transition: all 0.3s ease-in-out;
@@ -181,33 +130,27 @@
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
 }
-
 .contact textarea:hover {
   background: #ff7900;
   color: #e2dedb;
 }
-
 .contact__checkbox-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 15px;
   border: solid 1px #ff7900;
 }
-
-.contact__checkbox-container input[type="checkbox"] {
+.contact__checkbox-container input[type=checkbox] {
   width: auto;
   height: 20px;
   margin-right: 1em;
 }
-
 .contact #submit {
   width: 100%;
   max-width: 500px;
   height: 50px;
   padding: 0;
   margin: -5px 0px 0px 0px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 0.875em;
   color: #ff7900;
   outline: none;
@@ -215,9 +158,7 @@
   border: solid 1px #ff7900;
   border-top: none;
 }
-
 .contact #submit:hover {
   background-color: #05aacf;
   color: #4f4f4f;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

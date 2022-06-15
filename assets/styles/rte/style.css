@@ -2,40 +2,32 @@
   font-family: "Fleepavlop";
   src: url(../fonts/Fleepavlop.ttf) format("truetype"), url(../fonts/Fleepavlop.woff) format("woff");
 }
-
 @font-face {
   font-family: "Fleepavlop-thin";
   src: url(../fonts/Fleepavlop-Thin.ttf) format("truetype"), url(../fonts/Fleepavlop-Thin.woff) format("woff");
 }
-
 @font-face {
   font-family: "Fleepavlop-bold";
   src: url(../fonts/Fleepavlop-Bold.ttf) format("truetype"), url(../fonts/Fleepavlop-Bold.woff) format("woff");
 }
-
 @font-face {
   font-family: "DINPro";
   src: url(../fonts/DINPro.otf) format("opentype");
 }
-
 .rte__container {
   padding-top: 45px;
   min-height: calc(100vh - 85px);
 }
-
 .rte__container ul {
   margin-left: 1em;
 }
-
 .rte__title {
   font-family: "Fleepavlop-thin", "DINPro", sans-serif;
   text-align: center;
   margin: 32px 0 24px;
 }
-
 .rte__content {
   margin: auto;
   padding: 32px;
   max-width: 1080px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
