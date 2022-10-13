@@ -50,11 +50,21 @@
   .support .text-description {
     padding: 5px 11vw;
   }
-  .support .container__father {
-    flex-direction: row;
-  }
   .support .container__description .img__principal {
     width: 30vw;
+  }
+  .support .container__payment__button {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em;
+    background: #ff7900;
+    color: #000;
+    margin-top: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .support .container__payment__button:hover {
+    background: #05aacf;
   }
   .support .container__payment .img__qr {
     width: 12vw;
