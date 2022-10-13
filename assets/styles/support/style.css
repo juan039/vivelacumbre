@@ -8,6 +8,7 @@
 .support__title {
   margin: 32px 0 24px;
   text-align: center;
+  z-index: -1;
 }
 .support .text-description {
   padding: 3vh 0 5vh;
