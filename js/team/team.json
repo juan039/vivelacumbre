@@ -3,28 +3,28 @@
     "name": "Cristina",
     "photo_url": "./assets/img/Crisitina.png",
     "nickname": "",
-    "role": "Gestora de travesía y sostenibilidad (Con caña y Café)",
+    "role": "Coordinadora de sustentabilidad y Gestión de riesgos",
     "linkedin": "https://www.linkedin.com/in/cristinavaldiviesod/"
   },
   {
     "name": "Ana Lucía",
     "photo_url": "./assets/img/Ana.png",
     "nickname": "",
-    "role": "Gestora de travesía (Del Urabá)",
+    "role": "Gestora de travesía (Urabá)",
     "linkedin": "https://www.linkedin.com/in/ana-lucía-marimón-usuga-1a6a37122/"
   },
   {
     "name": "Laura",
     "photo_url": "./assets/img/Laura.png",
     "nickname": "",
-    "role": "Sostenibilidad",
+    "role": "Sustentabilidad",
     "linkedin": "https://www.linkedin.com/in/laura-echeverri-mallarino-835583196/"
   },
   {
     "name": "Daniela",
     "photo_url": "./assets/img/Daniela.png",
     "nickname": "",
-    "role": "",
+    "role": "Formación y Logística (Urabá)",
     "linkedin": "https://www.linkedin.com/in/daniela-casas-b1497813a/"
   },
   {
@@ -45,7 +45,7 @@
     "name": "Bárbara",
     "photo_url": "./assets/img/Barbara.png",
     "nickname": "",
-    "role": "Seguridad",
+    "role": "Gestora de travesía (Valle y Risaralda)",
     "linkedin": "https://www.linkedin.com/in/b%C3%A1rbara-uribe-holgu%C3%ADn-47a460104/"
   },
   {
@@ -59,7 +59,7 @@
     "name": "Eugenia",
     "photo_url": "./assets/img/Eugenia.png",
     "nickname": "",
-    "role": "Bienestar",
+    "role": "Formación",
     "linkedin": "https://www.linkedin.com/in/eugenia-echeverri-aranzazu-801295b6/"
   },
   {
@@ -68,5 +68,12 @@
     "nickname": "",
     "role": "Comunicaciones",
     "linkedin": "http://linkedin.com/in/vanessa-ortiz-rios-034b15233"
+  },
+  {
+    "name": "Camila",
+    "photo_url": "./assets/img/Camila.jpeg",
+    "nickname": "",
+    "role": "Monitoreo y evaluación",
+    "linkedin": ""
   }
 ]
