@@ -17,9 +17,9 @@
 .us__methodology__image {
   width: 100%;
 }
-.us__ods__separator {
-  border: 1px solid #05aacf;
-  margin: 1.5rem 0;
+.us__ods__container {
+  display: flex;
+  justify-content: space-around;
 }
 .us__ods__goal {
   display: flex;
@@ -27,13 +27,11 @@
   border-radius: 10px;
   border: 1px solid;
   padding: 1em;
+  width: 40%;
+  max-width: 250px;
 }
 .us__ods__goal img {
-  width: 150px;
-  margin-right: 1.5rem;
-}
-.us__ods__goal + .us__ods__goal {
-  margin-top: 2rem;
+  width: 100%;
 }
 .us__ods__goal--4 {
   border-color: #c8202f;
@@ -60,15 +58,5 @@
   }
   .us__methodology__image {
     max-width: 1080px;
-  }
-  .us__ods__goal img {
-    width: 200px;
-  }
-  .us__ods__goal--reverse {
-    flex-direction: row-reverse;
-  }
-  .us__ods__goal--reverse img {
-    margin-right: 0;
-    margin-left: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

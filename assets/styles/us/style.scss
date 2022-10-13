@@ -32,9 +32,9 @@
   }
   
   &__ods {
-    &__separator {
-      border: 1px solid $color-blue;
-      margin: 1.5rem 0;
+    &__container {
+      display: flex;
+      justify-content: space-around;
     }
 
     &__goal {
@@ -43,14 +43,11 @@
       border-radius: 10px;
       border: 1px solid;
       padding: 1em;
+      width: 40%;
+      max-width: 250px;
 
       img {
-        width: 150px;
-        margin-right: 1.5rem;
-      }
-
-      & + & {
-        margin-top: 2rem;
+        width: 100%;
       }
 
       &--4 {
@@ -83,23 +80,6 @@
       text-align: center;
       &__image {
        max-width: 1080px; 
-      }
-    }
-
-    &__ods {
-      &__goal {
-        img {
-          width: 200px;
-        }
-
-        &--reverse {
-          flex-direction: row-reverse;
-    
-          img {
-            margin-right: 0;
-            margin-left: 1.5rem;
-          }
-        }
       }
     }
   }
